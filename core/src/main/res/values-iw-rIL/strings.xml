@@ -361,6 +361,11 @@
   <!--Episodes apply actions-->
   <!--Sort-->
   <!--Rating dialog-->
+  <string name="rating_title">אוהבים את עושים היסטוריה?</string>
+  <string name="rating_message">נשמח אם תדרגו אותנו בגוגל-פליי</string>
+  <string name="rating_never_label">לא תודה</string>
+  <string name="rating_later_label">פעם אחרת</string>
+  <string name="rating_now_label">בטח!</string>
   <!--Audio controls-->
   <!--proxy settings-->
   <!--Casting-->
