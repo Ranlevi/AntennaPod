@@ -12,17 +12,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.activity.OnlineFeedViewActivity;
-import de.danoeh.antennapod.activity.PreferenceActivity;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.fragment.DownloadsFragment;
-import de.danoeh.antennapod.fragment.EpisodesFragment;
-import de.danoeh.antennapod.fragment.PlaybackHistoryFragment;
-import de.danoeh.antennapod.fragment.QueueFragment;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.OnlineFeedViewActivity;
+import de.danoeh.antennapod_mh.activity.PreferenceActivity;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.fragment.DownloadsFragment;
+import de.danoeh.antennapod_mh.fragment.EpisodesFragment;
+import de.danoeh.antennapod_mh.fragment.PlaybackHistoryFragment;
+import de.danoeh.antennapod_mh.fragment.QueueFragment;
 
 /**
  * User interface tests for MainActivity

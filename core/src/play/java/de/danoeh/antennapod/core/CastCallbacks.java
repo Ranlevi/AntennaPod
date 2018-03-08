@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core;
+package de.danoeh.antennapod_mh.core;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.MediaRouteDialogFactory;

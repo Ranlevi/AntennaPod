@@ -2,7 +2,7 @@ package de.test.antennapod.util;
 
 import android.test.AndroidTestCase;
 
-import de.danoeh.antennapod.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.Converter;
 
 /**
  * Test class for converter
