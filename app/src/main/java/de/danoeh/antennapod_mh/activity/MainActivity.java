@@ -33,6 +33,7 @@ import com.bumptech.glide.Glide;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
 
+import java.util.Arrays;
 import java.util.List;
 
 import de.danoeh.antennapod_mh.R;
@@ -93,6 +94,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
     public static final String  PREF_NAME = "MainActivityPrefs";
     public static final String  PREF_IS_FIRST_LAUNCH = "prefMainActivityIsFirstLaunch";
+    private static final String PREF_PRELOADED_FEED_LIST_HASH = "prefMainActivityPreloadedFeedHash";
     private static final String PREF_LAST_FRAGMENT_TAG = "prefMainActivityLastFragmentTag";
 
     public static final String  EXTRA_NAV_TYPE = "nav_type";
@@ -261,26 +263,36 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             //Sets the defalut update to 12 hours
             UserPreferences.setUpdateInterval(12);
 
-            String[] feeds = new String[]{
-                    "https://www.ranlevi.com/feed/mh_network_feed/",
-                    "https://www.ranlevi.com/feed/podcast/",
-                    "https://www.ranlevi.com/feed/osimpolitica/",
-                    "https://www.ranlevi.com/feed/osim_refua/",
-                    "https://www.ranlevi.com/feed/osimtanach/",
-                    "https://www.ranlevi.com/feed/sportpod_podcast/",
-                    "https://www.ranlevi.com/feed/bizpod/",
-                    "https://www.ranlevi.com/feed/osim_shivuk/",
-                    "https://www.ranlevi.com/feed/osim_tech/",
-                    "https://www.ranlevi.com/feed/osim_tiuol/",
-                    "https://www.ranlevi.com/feed/osim_historia_archived_episodes/",
-                    "https://malicious.life/feed/podcast/",
-                    "https://www.familysounds.co.il/feed/podcast/",
-                    "https://www.waterline.ranlevi.com/feed/podcast/",
-                    "https://www.cmpod.net/feed/podcast/",
-                    "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
-                    "http://tzipilivni.podbean.com/feed/"
-            };
+            SharedPreferences.Editor edit = prefs.edit();
+            edit.putBoolean(PREF_IS_FIRST_LAUNCH, false);
+            edit.commit();
+        }
 
+        String[] feeds = new String[]{
+                "https://www.ranlevi.com/feed/mh_network_feed/",
+                "https://www.ranlevi.com/feed/podcast/",
+                "https://www.ranlevi.com/feed/osimpolitica/",
+                "https://www.ranlevi.com/feed/osim_refua/",
+                "https://www.ranlevi.com/feed/osimtanach/",
+                "https://www.ranlevi.com/feed/sportpod_podcast/",
+                "https://www.ranlevi.com/feed/bizpod/",
+                "https://www.ranlevi.com/feed/osim_shivuk/",
+                "https://www.ranlevi.com/feed/osim_tech/",
+                "https://www.ranlevi.com/feed/osim_tiuol/",
+                "https://www.ranlevi.com/feed/osim_historia_archived_episodes/",
+                "https://malicious.life/feed/podcast/",
+                "https://www.familysounds.co.il/feed/podcast/",
+                "https://www.waterline.ranlevi.com/feed/podcast/",
+                "https://www.cmpod.net/feed/podcast/",
+                "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
+                "http://tzipilivni.podbean.com/feed/"
+        };
+
+        // Calculate the hash code on the list, should change automatically each time
+        // the list changes.
+        int feedsHash = Arrays.hashCode(feeds);
+        if (prefs.getInt(PREF_PRELOADED_FEED_LIST_HASH, 0) != feedsHash) {
+            // List was changed, reload feeds.
             for (String feedURL : feeds) {
                 Feed feed = new Feed(feedURL, null);
                 try {
@@ -292,7 +304,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             }
 
             SharedPreferences.Editor edit = prefs.edit();
-            edit.putBoolean(PREF_IS_FIRST_LAUNCH, false);
+            edit.putInt(PREF_PRELOADED_FEED_LIST_HASH, feedsHash);
             edit.commit();
         }
     }
