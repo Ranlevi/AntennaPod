@@ -2,8 +2,8 @@ package de.test.antennapod.feed;
 
 import android.test.AndroidTestCase;
 
-import de.danoeh.antennapod.core.feed.FeedFilter;
-import de.danoeh.antennapod.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedFilter;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
 
 public class FeedFilterTest extends AndroidTestCase {
 

@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.zip.GZIPOutputStream;
 
-import de.danoeh.antennapod.BuildConfig;
+import de.danoeh.antennapod_mh.BuildConfig;
 
 /**
  * Http server for testing purposes

@@ -7,14 +7,14 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.SimpleChapter;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.comparator.FeedItemPubdateComparator;
-import de.danoeh.antennapod.core.util.flattr.FlattrStatus;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.SimpleChapter;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.comparator.FeedItemPubdateComparator;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrStatus;
 
 /**
  * Utility methods for DB* tests.
