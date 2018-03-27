@@ -84,6 +84,13 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *
  *  Ver 1.5 (9000105):
  *  - Fixed splash screen & app icon bug.
+ *
+ *  Ver 1.6 (9000106):
+ *  - Fixed Update bug (Guy Kaplan)
+ *  - Changed Zippi Livni RSS url
+ *  - Fixed About page
+ *  - Replaced long.png
+ *
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -285,7 +292,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.waterline.ranlevi.com/feed/podcast/",
                 "https://www.cmpod.net/feed/podcast/",
                 "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
-                "http://tzipilivni.podbean.com/feed/"
+                "http://www.tzipilivni.co.il/feed/podcast"
         };
 
         // Calculate the hash code on the list, should change automatically each time
