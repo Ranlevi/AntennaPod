@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.danoeh.antennapod_mh"
     android:installLocation="auto"
-    android:versionCode="9000105"
-    android:versionName="1.5">
+    android:versionCode="9000106"
+    android:versionName="1.6">
     <!--
       Version code schema:
       "1.2.3-SNAPSHOT" -> 1020300
