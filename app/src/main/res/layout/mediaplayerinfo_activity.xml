@@ -102,25 +102,40 @@
                 android:background="?attr/overlay_background"
                 tools:background="@android:color/holo_purple">
 
-                <ImageButton
-                    android:id="@+id/butPlay"
+                <FrameLayout
+                    android:id="@+id/butPlayFrame"
                     android:layout_width="@dimen/audioplayer_playercontrols_length"
                     android:layout_height="@dimen/audioplayer_playercontrols_length"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
-                    android:layout_centerHorizontal="true"
-                    android:background="?attr/selectableItemBackground"
-                    android:contentDescription="@string/pause_label"
-                    android:src="?attr/av_pause"
-                    android:scaleType="fitCenter"
-                    tools:src="@drawable/ic_pause_white_36dp"
-                    tools:background="@android:color/holo_green_dark" />
+                    android:layout_centerHorizontal="true">
+
+                    <ImageButton
+                        android:id="@+id/butPlay"
+                        android:layout_width="@dimen/audioplayer_playercontrols_length"
+                        android:layout_height="@dimen/audioplayer_playercontrols_length"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/pause_label"
+                        android:src="?attr/av_pause"
+                        android:scaleType="fitCenter"
+                        tools:src="@drawable/ic_pause_white_36dp"
+                        tools:background="@android:color/holo_green_dark" />
+                    <ProgressBar
+                        android:id="@+id/progressIndicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:indeterminateOnly="true"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
+
 
                 <ImageButton
                     android:id="@+id/butRev"
                     android:layout_width="@dimen/audioplayer_playercontrols_length"
                     android:layout_height="@dimen/audioplayer_playercontrols_length"
-                    android:layout_toLeftOf="@id/butPlay"
+                    android:layout_toLeftOf="@id/butPlayFrame"
                     android:layout_marginLeft="16dp"
                     android:background="?attr/selectableItemBackground"
                     android:contentDescription="@string/rewind_label"
@@ -174,7 +189,7 @@
                     android:id="@+id/butFF"
                     android:layout_width="@dimen/audioplayer_playercontrols_length"
                     android:layout_height="@dimen/audioplayer_playercontrols_length"
-                    android:layout_toRightOf="@id/butPlay"
+                    android:layout_toRightOf="@id/butPlayFrame"
                     android:layout_marginRight="16dp"
                     android:background="?attr/selectableItemBackground"
                     android:contentDescription="@string/fast_forward_label"
