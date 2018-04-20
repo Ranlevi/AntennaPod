@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.danoeh.antennapod.core">
+    package="de.danoeh.antennapod_mh.core">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,9 +15,9 @@
         android:icon="@drawable/ic_launcher">
 
         <service
-            android:name=".service.download.DownloadService"
+            android:name="de.danoeh.antennapod_mh.core.service.download.DownloadService"
             android:enabled="true" />
-        <service android:name=".service.playback.PlaybackService"
+        <service android:name="de.danoeh.antennapod_mh.core.service.playback.PlaybackService"
             android:label="@string/app_name"
             android:enabled="true"
             android:exported="true">
@@ -26,11 +26,11 @@
             </intent-filter>
         </service>
         <service
-            android:name=".service.GpodnetSyncService"
+            android:name="de.danoeh.antennapod_mh.core.service.GpodnetSyncService"
             android:enabled="true" />
 
         <receiver
-            android:name=".receiver.MediaButtonReceiver"
+            android:name="de.danoeh.antennapod_mh.core.receiver.MediaButtonReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
@@ -40,7 +40,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".receiver.AlarmUpdateReceiver">
+        <receiver android:name="de.danoeh.antennapod_mh.core.receiver.AlarmUpdateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -52,7 +52,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".receiver.FeedUpdateReceiver">
+        <receiver android:name="de.danoeh.antennapod_mh.core.receiver.FeedUpdateReceiver">
         </receiver>
 
     </application>

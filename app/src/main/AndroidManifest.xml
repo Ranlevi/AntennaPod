@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.danoeh.antennapod"
+    package="de.danoeh.antennapod_mh"
     android:installLocation="auto"
-    android:versionCode="1060595"
-    android:versionName="1.6.5">
+    android:versionCode="9000106"
+    android:versionName="1.6">
     <!--
       Version code schema:
       "1.2.3-SNAPSHOT" -> 1020300
@@ -32,7 +32,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
-        android:name="de.danoeh.antennapod.PodcastApp"
+        android:name=".PodcastApp"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:backupAgent=".core.backup.OpmlBackupAgent"
@@ -73,7 +73,7 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.MainActivity"/>
+                android:value=".activity.MainActivity"/>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -89,7 +89,7 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.MainActivity"/>
+                android:value=".activity.MainActivity"/>
         </activity>
 
         <activity
@@ -102,7 +102,7 @@
             android:label="@string/settings_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.MainActivity"/>
+                android:value=".activity.MainActivity"/>
         </activity>
 
         <activity android:name=".activity.FeedInfoActivity">
@@ -158,21 +158,21 @@
             android:label="@string/about_pref">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.PreferenceActivity"/>
+                android:value=".activity.PreferenceActivity"/>
         </activity>
         <activity
             android:name=".activity.StatisticsActivity"
             android:label="@string/statistics_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.PreferenceActivity"/>
+                android:value=".activity.PreferenceActivity"/>
         </activity>
         <activity
                 android:name=".activity.ImportExportActivity"
                 android:label="@string/import_export">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value="de.danoeh.antennapod.activity.PreferenceActivity"/>
+                    android:value=".activity.PreferenceActivity"/>
         </activity>
         <activity
             android:name=".activity.OpmlImportFromPathActivity"
@@ -226,7 +226,7 @@
             android:screenOrientation="sensorLandscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.MainActivity"/>
+                android:value=".activity.MainActivity"/>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -242,7 +242,7 @@
             android:label="@string/choose_data_directory">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.PreferenceActivity"/>
+                android:value=".activity.PreferenceActivity"/>
         </activity>
 
         <activity
@@ -251,7 +251,7 @@
             android:label="@string/add_feed_label">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.MainActivity"/>
+                android:value=".activity.MainActivity"/>
 
             <!-- URLs ending with '.xml' or '.rss' -->
 
@@ -336,7 +336,7 @@
             </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.danoeh.antennapod.activity.PreferenceActivity"/>
+                android:value=".activity.PreferenceActivity"/>
         </activity>
 
         <receiver android:name=".receiver.ConnectivityActionReceiver">
@@ -357,7 +357,7 @@
                 <action android:name="de.danoeh.antennapdsp.intent.SP_APPS_QUERY_FEEDS_RESPONSE"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="de.danoeh.antennapod.core.receiver.AlarmUpdateReceiver">
+        <receiver android:name=".core.receiver.AlarmUpdateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
@@ -381,12 +381,14 @@
         </provider>
 
         <meta-data
-            android:name="de.danoeh.antennapod.core.glide.ApGlideModule"
+            android:name="de.danoeh.antennapod_mh.core.glide.ApGlideModule"
             android:value="GlideModule" />
 
+        <!--
         <meta-data
                     android:name="com.google.android.gms.car.application"
                     android:resource="@xml/automotive_app_desc"/>
+        -->
     </application>
 
 </manifest>

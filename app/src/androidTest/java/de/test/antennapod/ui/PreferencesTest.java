@@ -10,13 +10,13 @@ import com.robotium.solo.Timeout;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.PreferenceActivity;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.APCleanupAlgorithm;
-import de.danoeh.antennapod.core.storage.APNullCleanupAlgorithm;
-import de.danoeh.antennapod.core.storage.APQueueCleanupAlgorithm;
-import de.danoeh.antennapod.core.storage.EpisodeCleanupAlgorithm;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.activity.PreferenceActivity;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.APCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.APNullCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.APQueueCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.EpisodeCleanupAlgorithm;
 
 public class PreferencesTest extends ActivityInstrumentationTestCase2<PreferenceActivity>  {
 
@@ -50,7 +50,7 @@ public class PreferencesTest extends ActivityInstrumentationTestCase2<Preference
     public void testSwitchTheme() {
         final int theme = UserPreferences.getTheme();
         int otherTheme;
-        if(theme == de.danoeh.antennapod.core.R.style.Theme_AntennaPod_Light) {
+        if(theme == de.danoeh.antennapod_mh.core.R.style.Theme_AntennaPod_Light) {
             otherTheme = R.string.pref_theme_title_dark;
         } else {
             otherTheme = R.string.pref_theme_title_light;
@@ -64,7 +64,7 @@ public class PreferencesTest extends ActivityInstrumentationTestCase2<Preference
     public void testSwitchThemeBack() {
         final int theme = UserPreferences.getTheme();
         int otherTheme;
-        if(theme == de.danoeh.antennapod.core.R.style.Theme_AntennaPod_Light) {
+        if(theme == de.danoeh.antennapod_mh.core.R.style.Theme_AntennaPod_Light) {
             otherTheme = R.string.pref_theme_title_dark;
         } else {
             otherTheme = R.string.pref_theme_title_light;
