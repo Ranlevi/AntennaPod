@@ -45,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
+            android:layoutDirection="ltr"
             android:layout_alignParentBottom="true"
             android:background="?attr/overlay_drawable"
             android:orientation="vertical">
