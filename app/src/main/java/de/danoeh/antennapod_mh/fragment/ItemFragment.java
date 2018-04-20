@@ -34,7 +34,6 @@ import com.bumptech.glide.Glide;
 import com.joanzapata.iconify.Iconify;
 import com.joanzapata.iconify.widget.IconButton;
 
-import de.danoeh.antennapod.core.util.NetworkUtils;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.List;
@@ -61,6 +60,7 @@ import de.danoeh.antennapod_mh.core.util.DateUtils;
 import de.danoeh.antennapod_mh.core.util.Flavors;
 import de.danoeh.antennapod_mh.core.util.IntentUtils;
 import de.danoeh.antennapod_mh.core.util.LongList;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
 import de.danoeh.antennapod_mh.core.util.ShareUtils;
 import de.danoeh.antennapod_mh.core.util.playback.Timeline;
 import de.danoeh.antennapod_mh.menuhandler.FeedItemMenuHandler;

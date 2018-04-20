@@ -210,8 +210,8 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
 
     @Override
     protected void postStatusMsg(int resId, boolean showToast) {
-        if (//resId == R.string.player_preparing_msg
-                 resId == R.string.player_seeking_msg
+        if (resId == R.string.player_preparing_msg
+                || resId == R.string.player_seeking_msg
                 || resId == R.string.player_buffering_msg) {
             progressIndicator.setVisibility(View.VISIBLE);
             butPlay.setVisibility(View.INVISIBLE);
