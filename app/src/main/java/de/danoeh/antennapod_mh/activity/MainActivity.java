@@ -91,6 +91,10 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  - Fixed About page
  *  - Replaced long.png
  *
+ *  Ver 1.7 (9000107) Guy Kaplan
+ *  - Fixed LTR flip of UI (not tested)
+ *  - Added a spinner for streaming loading
+ *
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
