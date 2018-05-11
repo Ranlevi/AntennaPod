@@ -95,6 +95,10 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  - Fixed LTR flip of UI (not tested)
  *  - Added a spinner for streaming loading
  *
+ *  Ver 1.71 (900171)
+ *  - Added Osim Software
+ *  - Changed Version numbering to 900171 to enable minor revisions
+ *
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -280,6 +284,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         }
 
         String[] feeds = new String[]{
+                "https://www.ranlevi.com/feed/osim_software_feed/",
                 "https://www.ranlevi.com/feed/mh_network_feed/",
                 "https://www.ranlevi.com/feed/podcast/",
                 "https://www.ranlevi.com/feed/osimpolitica/",
