@@ -57,7 +57,7 @@ import rx.schedulers.Schedulers;
  */
 public class FeedInfoActivity extends AppCompatActivity {
 
-    public static final String EXTRA_FEED_ID = "de.danoeh.antennapod.extra.feedId";
+    public static final String EXTRA_FEED_ID = "de.danoeh.antennapod_mh.extra.feedId";
     private static final String TAG = "FeedInfoActivity";
     private boolean autoDeleteChanged = false;
     private Feed feed;

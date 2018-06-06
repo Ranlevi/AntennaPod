@@ -26,13 +26,13 @@ import de.danoeh.antennapod_mh.core.util.playback.Playable;
 public class CastUtils {
     private static final String TAG = "CastUtils";
 
-    public static final String KEY_MEDIA_ID = "de.danoeh.antennapod.core.cast.MediaId";
+    public static final String KEY_MEDIA_ID = "de.danoeh.antennapod_mh.core.cast.MediaId";
 
-    public static final String KEY_EPISODE_IDENTIFIER = "de.danoeh.antennapod.core.cast.EpisodeId";
-    public static final String KEY_EPISODE_LINK = "de.danoeh.antennapod.core.cast.EpisodeLink";
-    public static final String KEY_FEED_URL = "de.danoeh.antennapod.core.cast.FeedUrl";
-    public static final String KEY_FEED_WEBSITE = "de.danoeh.antennapod.core.cast.FeedWebsite";
-    public static final String KEY_EPISODE_NOTES = "de.danoeh.antennapod.core.cast.EpisodeNotes";
+    public static final String KEY_EPISODE_IDENTIFIER = "de.danoeh.antennapod_mh.core.cast.EpisodeId";
+    public static final String KEY_EPISODE_LINK = "de.danoeh.antennapod_mh.core.cast.EpisodeLink";
+    public static final String KEY_FEED_URL = "de.danoeh.antennapod_mh.core.cast.FeedUrl";
+    public static final String KEY_FEED_WEBSITE = "de.danoeh.antennapod_mh.core.cast.FeedWebsite";
+    public static final String KEY_EPISODE_NOTES = "de.danoeh.antennapod_mh.core.cast.EpisodeNotes";
     public static final int EPISODE_NOTES_MAX_LENGTH = Integer.MAX_VALUE;
 
     /**
@@ -44,7 +44,7 @@ public class CastUtils {
      * <code>MAX_VERSION_FORWARD_COMPATIBILITY</code> value set on the earlier one, so that it
      * doesn't try to parse the object.
      */
-    public static final String KEY_FORMAT_VERSION = "de.danoeh.antennapod.core.cast.FormatVersion";
+    public static final String KEY_FORMAT_VERSION = "de.danoeh.antennapod_mh.core.cast.FormatVersion";
     public static final int FORMAT_VERSION_VALUE = 1;
     public static final int MAX_VERSION_FORWARD_COMPATIBILITY = 9999;
 

@@ -38,7 +38,7 @@ public class FlattrUtils {
 
     private static final String HOST_NAME = "de.danoeh.antennapod";
 
-    private static final String PREF_ACCESS_TOKEN = "de.danoeh.antennapod.preference.flattrAccessToken";
+    private static final String PREF_ACCESS_TOKEN = "de.danoeh.antennapod_mh.preference.flattrAccessToken";
 
     private static volatile AccessToken cachedToken;
 

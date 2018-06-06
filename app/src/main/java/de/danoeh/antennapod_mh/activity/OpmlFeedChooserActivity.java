@@ -23,7 +23,7 @@ import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
  * which feeds he wants to import.
  */
 public class OpmlFeedChooserActivity extends AppCompatActivity {
-    public static final String EXTRA_SELECTED_ITEMS = "de.danoeh.antennapod.selectedItems";
+    public static final String EXTRA_SELECTED_ITEMS = "de.danoeh.antennapod_mh.selectedItems";
     private static final String TAG = "OpmlFeedChooserActivity";
     private Button butConfirm;
     private Button butCancel;

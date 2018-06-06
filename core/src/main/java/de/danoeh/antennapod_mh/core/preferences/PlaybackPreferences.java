@@ -19,35 +19,35 @@ public class PlaybackPreferences implements SharedPreferences.OnSharedPreference
      * Contains the feed id of the currently playing item if it is a FeedMedia
      * object.
      */
-    public static final String PREF_CURRENTLY_PLAYING_FEED_ID = "de.danoeh.antennapod.preferences.lastPlayedFeedId";
+    public static final String PREF_CURRENTLY_PLAYING_FEED_ID = "de.danoeh.antennapod_mh.preferences.lastPlayedFeedId";
 
     /**
      * Contains the id of the currently playing FeedMedia object or
      * NO_MEDIA_PLAYING if the currently playing media is no FeedMedia object.
      */
-    public static final String PREF_CURRENTLY_PLAYING_FEEDMEDIA_ID = "de.danoeh.antennapod.preferences.lastPlayedFeedMediaId";
+    public static final String PREF_CURRENTLY_PLAYING_FEEDMEDIA_ID = "de.danoeh.antennapod_mh.preferences.lastPlayedFeedMediaId";
 
     /**
      * Type of the media object that is currently being played. This preference
      * is set to NO_MEDIA_PLAYING after playback has been completed and is set
      * as soon as the 'play' button is pressed.
      */
-    public static final String PREF_CURRENTLY_PLAYING_MEDIA = "de.danoeh.antennapod.preferences.currentlyPlayingMedia";
+    public static final String PREF_CURRENTLY_PLAYING_MEDIA = "de.danoeh.antennapod_mh.preferences.currentlyPlayingMedia";
 
     /**
      * True if last played media was streamed.
      */
-    public static final String PREF_CURRENT_EPISODE_IS_STREAM = "de.danoeh.antennapod.preferences.lastIsStream";
+    public static final String PREF_CURRENT_EPISODE_IS_STREAM = "de.danoeh.antennapod_mh.preferences.lastIsStream";
 
     /**
      * True if last played media was a video.
      */
-    public static final String PREF_CURRENT_EPISODE_IS_VIDEO = "de.danoeh.antennapod.preferences.lastIsVideo";
+    public static final String PREF_CURRENT_EPISODE_IS_VIDEO = "de.danoeh.antennapod_mh.preferences.lastIsVideo";
 
     /**
      * The current player status as int.
      */
-    public static final String PREF_CURRENT_PLAYER_STATUS = "de.danoeh.antennapod.preferences.currentPlayerStatus";
+    public static final String PREF_CURRENT_PLAYER_STATUS = "de.danoeh.antennapod_mh.preferences.currentPlayerStatus";
 
     /**
      * Value of PREF_CURRENTLY_PLAYING_MEDIA if no media is playing.

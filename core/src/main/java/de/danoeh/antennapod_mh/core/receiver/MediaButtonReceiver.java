@@ -12,10 +12,10 @@ import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
 /** Receives media button events. */
 public class MediaButtonReceiver extends BroadcastReceiver {
 	private static final String TAG = "MediaButtonReceiver";
-	public static final String EXTRA_KEYCODE = "de.danoeh.antennapod.core.service.extra.MediaButtonReceiver.KEYCODE";
-	public static final String EXTRA_SOURCE = "de.danoeh.antennapod.core.service.extra.MediaButtonReceiver.SOURCE";
+	public static final String EXTRA_KEYCODE = "de.danoeh.antennapod_mh.core.service.extra.MediaButtonReceiver.KEYCODE";
+	public static final String EXTRA_SOURCE = "de.danoeh.antennapod_mh.core.service.extra.MediaButtonReceiver.SOURCE";
 
-	public static final String NOTIFY_BUTTON_RECEIVER = "de.danoeh.antennapod.NOTIFY_BUTTON_RECEIVER";
+	public static final String NOTIFY_BUTTON_RECEIVER = "de.danoeh.antennapod_mh.NOTIFY_BUTTON_RECEIVER";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
