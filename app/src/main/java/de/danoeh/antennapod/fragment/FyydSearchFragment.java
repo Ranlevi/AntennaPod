@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,10 +21,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.OnlineFeedViewActivity;
-import de.danoeh.antennapod.adapter.itunes.ItunesAdapter;
+import de.danoeh.antennapod_mh.activity.OnlineFeedViewActivity;
+import de.danoeh.antennapod_mh.adapter.itunes.ItunesAdapter;
 import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
-import de.danoeh.antennapod.menuhandler.MenuItemUtils;
+import de.danoeh.antennapod_mh.menuhandler.MenuItemUtils;
 import de.mfietz.fyydlin.FyydClient;
 import de.mfietz.fyydlin.FyydResponse;
 import de.mfietz.fyydlin.SearchHit;
@@ -32,7 +32,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-import static de.danoeh.antennapod.adapter.itunes.ItunesAdapter.Podcast;
+import static de.danoeh.antennapod_mh.adapter.itunes.ItunesAdapter.Podcast;
 import static java.util.Collections.emptyList;
 
 public class FyydSearchFragment extends Fragment {

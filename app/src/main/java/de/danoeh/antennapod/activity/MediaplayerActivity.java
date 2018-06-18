@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -16,7 +16,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
@@ -48,8 +47,8 @@ import de.danoeh.antennapod.core.util.Supplier;
 import de.danoeh.antennapod.core.util.playback.MediaPlayerError;
 import de.danoeh.antennapod.core.util.playback.Playable;
 import de.danoeh.antennapod.core.util.playback.PlaybackController;
-import de.danoeh.antennapod.dialog.SleepTimerDialog;
-import de.danoeh.antennapod.dialog.VariableSpeedDialog;
+import de.danoeh.antennapod_mh.dialog.SleepTimerDialog;
+import de.danoeh.antennapod_mh.dialog.VariableSpeedDialog;
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;

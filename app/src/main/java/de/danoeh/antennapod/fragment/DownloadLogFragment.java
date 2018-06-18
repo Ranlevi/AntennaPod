@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import android.widget.ListView;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.adapter.DownloadLogAdapter;
+import de.danoeh.antennapod_mh.adapter.DownloadLogAdapter;
 import de.danoeh.antennapod.core.feed.EventDistributor;
 import de.danoeh.antennapod.core.service.download.DownloadStatus;
 import de.danoeh.antennapod.core.storage.DBReader;

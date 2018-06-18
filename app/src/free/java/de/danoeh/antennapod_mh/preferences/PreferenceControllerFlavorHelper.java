@@ -1,6 +1,7 @@
-package de.danoeh.antennapod.preferences;
+package de.danoeh.antennapod_mh.preferences;
 
 import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /**
  * Implements functions from PreferenceController that are flavor dependent.

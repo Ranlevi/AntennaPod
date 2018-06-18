@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -28,7 +28,7 @@ import de.danoeh.antennapod.core.service.playback.PlaybackService;
 import de.danoeh.antennapod.core.service.playback.PlayerStatus;
 import de.danoeh.antennapod.core.util.playback.ExternalMedia;
 import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.view.AspectRatioVideoView;
+import de.danoeh.antennapod_mh.view.AspectRatioVideoView;
 
 /**
  * Activity for playing video files.

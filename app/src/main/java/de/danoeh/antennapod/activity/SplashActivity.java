@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment.gpodnet;
+package de.danoeh.antennapod_mh.fragment.gpodnet;
 
 import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;

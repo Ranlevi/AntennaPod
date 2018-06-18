@@ -1,6 +1,7 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -34,8 +35,8 @@ import com.viewpagerindicator.CirclePageIndicator;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.adapter.ChaptersListAdapter;
-import de.danoeh.antennapod.adapter.NavListAdapter;
+import de.danoeh.antennapod_mh.adapter.ChaptersListAdapter;
+import de.danoeh.antennapod_mh.adapter.NavListAdapter;
 import de.danoeh.antennapod.core.asynctask.FeedRemover;
 import de.danoeh.antennapod.core.dialog.ConfirmationDialog;
 import de.danoeh.antennapod.core.event.MessageEvent;
@@ -50,18 +51,18 @@ import de.danoeh.antennapod.core.storage.DBTasks;
 import de.danoeh.antennapod.core.storage.DBWriter;
 import de.danoeh.antennapod.core.util.playback.Playable;
 import de.danoeh.antennapod.core.util.playback.PlaybackController;
-import de.danoeh.antennapod.dialog.RenameFeedDialog;
-import de.danoeh.antennapod.fragment.AddFeedFragment;
-import de.danoeh.antennapod.fragment.ChaptersFragment;
-import de.danoeh.antennapod.fragment.CoverFragment;
-import de.danoeh.antennapod.fragment.DownloadsFragment;
-import de.danoeh.antennapod.fragment.EpisodesFragment;
-import de.danoeh.antennapod.fragment.ItemDescriptionFragment;
-import de.danoeh.antennapod.fragment.PlaybackHistoryFragment;
-import de.danoeh.antennapod.fragment.QueueFragment;
-import de.danoeh.antennapod.fragment.SubscriptionFragment;
-import de.danoeh.antennapod.menuhandler.NavDrawerActivity;
-import de.danoeh.antennapod.preferences.PreferenceController;
+import de.danoeh.antennapod_mh.dialog.RenameFeedDialog;
+import de.danoeh.antennapod_mh.fragment.AddFeedFragment;
+import de.danoeh.antennapod_mh.fragment.ChaptersFragment;
+import de.danoeh.antennapod_mh.fragment.CoverFragment;
+import de.danoeh.antennapod_mh.fragment.DownloadsFragment;
+import de.danoeh.antennapod_mh.fragment.EpisodesFragment;
+import de.danoeh.antennapod_mh.fragment.ItemDescriptionFragment;
+import de.danoeh.antennapod_mh.fragment.PlaybackHistoryFragment;
+import de.danoeh.antennapod_mh.fragment.QueueFragment;
+import de.danoeh.antennapod_mh.fragment.SubscriptionFragment;
+import de.danoeh.antennapod_mh.menuhandler.NavDrawerActivity;
+import de.danoeh.antennapod_mh.preferences.PreferenceController;
 import de.greenrobot.event.EventBus;
 import rx.Observable;
 import rx.Subscription;
@@ -153,7 +154,7 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
             return;
         }
         Log.d(TAG, "Saving preferences");
-        SharedPreferences prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
         prefs.edit()
                 .putInt(PREF_KEY_SELECTED_FRAGMENT_POSITION, pager.getCurrentItem())
                 .commit();
@@ -169,7 +170,7 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
 
     private void loadLastFragment() {
         Log.d(TAG, "Restoring instance state");
-        SharedPreferences prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
         int lastPosition = prefs.getInt(PREF_KEY_SELECTED_FRAGMENT_POSITION, -1);
         pager.setCurrentItem(lastPosition);
     }

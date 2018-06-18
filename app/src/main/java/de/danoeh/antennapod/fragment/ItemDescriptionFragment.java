@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -27,8 +27,8 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MediaplayerInfoActivity;
-import de.danoeh.antennapod.activity.MediaplayerInfoActivity.MediaplayerInfoContentFragment;
+import de.danoeh.antennapod_mh.activity.MediaplayerInfoActivity;
+import de.danoeh.antennapod_mh.activity.MediaplayerInfoActivity.MediaplayerInfoContentFragment;
 import de.danoeh.antennapod.core.feed.FeedItem;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
 import de.danoeh.antennapod.core.storage.DBReader;

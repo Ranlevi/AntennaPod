@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.adapter;
+package de.danoeh.antennapod_mh.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

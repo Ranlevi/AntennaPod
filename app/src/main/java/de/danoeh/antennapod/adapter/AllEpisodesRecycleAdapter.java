@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.adapter;
+package de.danoeh.antennapod_mh.adapter;
 
 import android.os.Build;
 import android.support.v4.content.ContextCompat;
@@ -26,7 +26,7 @@ import com.nineoldandroids.view.ViewHelper;
 import java.lang.ref.WeakReference;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.feed.FeedItem;
 import de.danoeh.antennapod.core.feed.FeedMedia;
 import de.danoeh.antennapod.core.glide.ApGlideSettings;
@@ -36,8 +36,8 @@ import de.danoeh.antennapod.core.util.Converter;
 import de.danoeh.antennapod.core.util.DateUtils;
 import de.danoeh.antennapod.core.util.LongList;
 import de.danoeh.antennapod.core.util.NetworkUtils;
-import de.danoeh.antennapod.fragment.ItemFragment;
-import de.danoeh.antennapod.menuhandler.FeedItemMenuHandler;
+import de.danoeh.antennapod_mh.fragment.ItemFragment;
+import de.danoeh.antennapod_mh.menuhandler.FeedItemMenuHandler;
 
 /**
  * List adapter for the list of new episodes

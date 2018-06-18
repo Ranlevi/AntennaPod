@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,8 +16,8 @@ import android.widget.ListView;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.adapter.SearchlistAdapter;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.adapter.SearchlistAdapter;
 import de.danoeh.antennapod.core.feed.EventDistributor;
 import de.danoeh.antennapod.core.feed.Feed;
 import de.danoeh.antennapod.core.feed.FeedComponent;

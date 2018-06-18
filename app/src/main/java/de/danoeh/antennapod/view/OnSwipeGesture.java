@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.view;
+package de.danoeh.antennapod_mh.view;
 
 public interface OnSwipeGesture {
 

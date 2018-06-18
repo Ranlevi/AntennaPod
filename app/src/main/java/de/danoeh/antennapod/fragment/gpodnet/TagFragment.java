@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment.gpodnet;
+package de.danoeh.antennapod_mh.fragment.gpodnet;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,7 @@ import org.apache.commons.lang3.Validate;
 
 import java.util.List;
 
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
 import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;

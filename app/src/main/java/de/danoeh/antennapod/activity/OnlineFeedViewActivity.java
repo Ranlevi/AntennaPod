@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -38,7 +38,7 @@ import java.util.List;
 import java.util.Map;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.adapter.FeedItemlistDescriptionAdapter;
+import de.danoeh.antennapod_mh.adapter.FeedItemlistDescriptionAdapter;
 import de.danoeh.antennapod.core.dialog.DownloadRequestErrorDialogCreator;
 import de.danoeh.antennapod.core.event.DownloadEvent;
 import de.danoeh.antennapod.core.feed.EventDistributor;
@@ -63,7 +63,7 @@ import de.danoeh.antennapod.core.util.StorageUtils;
 import de.danoeh.antennapod.core.util.URLChecker;
 import de.danoeh.antennapod.core.util.syndication.FeedDiscoverer;
 import de.danoeh.antennapod.core.util.syndication.HtmlToPlainText;
-import de.danoeh.antennapod.dialog.AuthenticationDialog;
+import de.danoeh.antennapod_mh.dialog.AuthenticationDialog;
 import de.greenrobot.event.EventBus;
 import rx.Observable;
 import rx.Subscriber;

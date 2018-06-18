@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.receiver;
+package de.danoeh.antennapod_mh.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

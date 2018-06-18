@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 import de.danoeh.antennapod.BuildConfig;
 import de.danoeh.antennapod.core.ClientConfig;

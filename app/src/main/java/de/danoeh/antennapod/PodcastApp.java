@@ -1,4 +1,4 @@
-package de.danoeh.antennapod;
+package de.danoeh.antennapod_mh;
 
 import android.app.Application;
 import android.os.Build;
@@ -10,7 +10,7 @@ import com.joanzapata.iconify.fonts.MaterialModule;
 
 import de.danoeh.antennapod.core.ClientConfig;
 import de.danoeh.antennapod.core.feed.EventDistributor;
-import de.danoeh.antennapod.spa.SPAUtil;
+import de.danoeh.antennapod_mh.spa.SPAUtil;
 
 /** Main application class. */
 public class PodcastApp extends Application {
@@ -18,7 +18,7 @@ public class PodcastApp extends Application {
     // make sure that ClientConfigurator executes its static code
     static {
         try {
-            Class.forName("de.danoeh.antennapod.config.ClientConfigurator");
+            Class.forName("de.danoeh.antennapod_mh.config.ClientConfigurator");
         } catch (Exception e) {
             throw new RuntimeException("ClientConfigurator not found");
         }

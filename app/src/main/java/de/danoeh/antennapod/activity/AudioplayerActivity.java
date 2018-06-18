@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.content.Intent;
 import android.support.v4.view.ViewCompat;
@@ -12,7 +12,7 @@ import de.danoeh.antennapod.core.feed.MediaType;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
 import de.danoeh.antennapod.core.service.playback.PlaybackService;
 import de.danoeh.antennapod.core.util.playback.ExternalMedia;
-import de.danoeh.antennapod.dialog.VariableSpeedDialog;
+import de.danoeh.antennapod_mh.dialog.VariableSpeedDialog;
 
 /**
  * Activity for playing audio files.

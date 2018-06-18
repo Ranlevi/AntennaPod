@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment.gpodnet;
+package de.danoeh.antennapod_mh.fragment.gpodnet;
 
 import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
@@ -15,7 +15,7 @@ import de.danoeh.antennapod.R;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
 import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;
-import de.danoeh.antennapod.menuhandler.MenuItemUtils;
+import de.danoeh.antennapod_mh.menuhandler.MenuItemUtils;
 
 /**
  * Performs a search on the gpodder.net directory and displays the results.

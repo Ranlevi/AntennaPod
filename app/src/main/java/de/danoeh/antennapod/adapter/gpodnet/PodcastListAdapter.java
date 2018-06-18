@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.adapter.gpodnet;
+package de.danoeh.antennapod_mh.adapter.gpodnet;
 
 import android.content.Context;
 import android.view.LayoutInflater;

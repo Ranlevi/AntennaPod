@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -28,9 +28,9 @@ import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.adapter.DefaultActionButtonCallback;
-import de.danoeh.antennapod.adapter.QueueRecyclerAdapter;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.adapter.DefaultActionButtonCallback;
+import de.danoeh.antennapod_mh.adapter.QueueRecyclerAdapter;
 import de.danoeh.antennapod.core.dialog.ConfirmationDialog;
 import de.danoeh.antennapod.core.event.DownloadEvent;
 import de.danoeh.antennapod.core.event.DownloaderUpdate;
@@ -52,8 +52,7 @@ import de.danoeh.antennapod.core.util.Converter;
 import de.danoeh.antennapod.core.util.FeedItemUtil;
 import de.danoeh.antennapod.core.util.LongList;
 import de.danoeh.antennapod.core.util.QueueSorter;
-import de.danoeh.antennapod.menuhandler.FeedItemMenuHandler;
-import de.danoeh.antennapod.menuhandler.MenuItemUtils;
+import de.danoeh.antennapod_mh.menuhandler.FeedItemMenuHandler;
 import de.greenrobot.event.EventBus;
 import rx.Observable;
 import rx.Subscription;
@@ -230,7 +229,7 @@ public class QueueFragment extends Fragment {
         resetViewState();
     }
 
-    private final MenuItemUtils.UpdateRefreshMenuItemChecker updateRefreshMenuItemChecker =
+    private final de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.UpdateRefreshMenuItemChecker updateRefreshMenuItemChecker =
             () -> DownloadService.isRunning && DownloadRequester.getInstance().isDownloadingFeeds();
 
     @Override
@@ -244,7 +243,7 @@ public class QueueFragment extends Fragment {
 
             MenuItem searchItem = menu.findItem(R.id.action_search);
             final SearchView sv = (SearchView) MenuItemCompat.getActionView(searchItem);
-            MenuItemUtils.adjustTextColor(getActivity(), sv);
+            de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.adjustTextColor(getActivity(), sv);
             sv.setQueryHint(getString(R.string.search_hint));
             sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
@@ -260,9 +259,9 @@ public class QueueFragment extends Fragment {
                 }
             });
 
-            MenuItemUtils.refreshLockItem(getActivity(), menu);
+            de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.refreshLockItem(getActivity(), menu);
 
-            isUpdatingFeeds = MenuItemUtils.updateRefreshMenuItem(menu, R.id.refresh_item, updateRefreshMenuItemChecker);
+            isUpdatingFeeds = de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.updateRefreshMenuItem(menu, R.id.refresh_item, updateRefreshMenuItemChecker);
         }
     }
 

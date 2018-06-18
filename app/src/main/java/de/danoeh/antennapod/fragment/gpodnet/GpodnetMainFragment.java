@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment.gpodnet;
+package de.danoeh.antennapod_mh.fragment.gpodnet;
 
 import android.content.Context;
 import android.content.SharedPreferences;

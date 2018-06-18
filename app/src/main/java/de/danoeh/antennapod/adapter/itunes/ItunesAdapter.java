@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.adapter.itunes;
+package de.danoeh.antennapod_mh.adapter.itunes;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.mfietz.fyydlin.SearchHit;
 
 public class ItunesAdapter extends ArrayAdapter<ItunesAdapter.Podcast> {

@@ -1,10 +1,10 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.GpodnetCallbacks;
 
 

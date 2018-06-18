@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.ClipData;
 import android.content.Context;
@@ -39,9 +39,9 @@ import org.apache.commons.lang3.ArrayUtils;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.CastEnabledActivity;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.adapter.DefaultActionButtonCallback;
+import de.danoeh.antennapod_mh.activity.CastEnabledActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.adapter.DefaultActionButtonCallback;
 import de.danoeh.antennapod.core.event.DownloadEvent;
 import de.danoeh.antennapod.core.event.DownloaderUpdate;
 import de.danoeh.antennapod.core.event.FeedItemEvent;
@@ -63,9 +63,9 @@ import de.danoeh.antennapod.core.util.IntentUtils;
 import de.danoeh.antennapod.core.util.LongList;
 import de.danoeh.antennapod.core.util.ShareUtils;
 import de.danoeh.antennapod.core.util.playback.Timeline;
-import de.danoeh.antennapod.menuhandler.FeedItemMenuHandler;
-import de.danoeh.antennapod.view.OnSwipeGesture;
-import de.danoeh.antennapod.view.SwipeGestureDetector;
+import de.danoeh.antennapod_mh.menuhandler.FeedItemMenuHandler;
+import de.danoeh.antennapod_mh.view.OnSwipeGesture;
+import de.danoeh.antennapod_mh.view.SwipeGestureDetector;
 import de.greenrobot.event.EventBus;
 import rx.Observable;
 import rx.Subscription;

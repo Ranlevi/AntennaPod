@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.view;
+package de.danoeh.antennapod_mh.view;
 
 /*
  * Copyright (C) Google Inc.  All rights reserved.

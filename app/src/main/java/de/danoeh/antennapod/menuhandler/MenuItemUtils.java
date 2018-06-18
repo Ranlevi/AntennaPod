@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.menuhandler;
+package de.danoeh.antennapod_mh.menuhandler;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.adapter;
+package de.danoeh.antennapod_mh.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,18 +29,18 @@ import java.util.Collections;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.feed.Feed;
 import de.danoeh.antennapod.core.glide.ApGlideSettings;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.fragment.AddFeedFragment;
-import de.danoeh.antennapod.fragment.AllEpisodesFragment;
-import de.danoeh.antennapod.fragment.DownloadsFragment;
-import de.danoeh.antennapod.fragment.EpisodesFragment;
-import de.danoeh.antennapod.fragment.NewEpisodesFragment;
-import de.danoeh.antennapod.fragment.PlaybackHistoryFragment;
-import de.danoeh.antennapod.fragment.QueueFragment;
-import de.danoeh.antennapod.fragment.SubscriptionFragment;
+import de.danoeh.antennapod_mh.fragment.AddFeedFragment;
+import de.danoeh.antennapod_mh.fragment.AllEpisodesFragment;
+import de.danoeh.antennapod_mh.fragment.DownloadsFragment;
+import de.danoeh.antennapod_mh.fragment.EpisodesFragment;
+import de.danoeh.antennapod_mh.fragment.NewEpisodesFragment;
+import de.danoeh.antennapod_mh.fragment.PlaybackHistoryFragment;
+import de.danoeh.antennapod_mh.fragment.QueueFragment;
+import de.danoeh.antennapod_mh.fragment.SubscriptionFragment;
 
 /**
  * BaseAdapter for the navigation drawer

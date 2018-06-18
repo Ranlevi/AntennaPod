@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.ListView;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MediaplayerInfoActivity.MediaplayerInfoContentFragment;
-import de.danoeh.antennapod.adapter.ChaptersListAdapter;
+import de.danoeh.antennapod_mh.activity.MediaplayerInfoActivity.MediaplayerInfoContentFragment;
+import de.danoeh.antennapod_mh.adapter.ChaptersListAdapter;
 import de.danoeh.antennapod.core.feed.Chapter;
 import de.danoeh.antennapod.core.util.playback.Playable;
 import de.danoeh.antennapod.core.util.playback.PlaybackController;

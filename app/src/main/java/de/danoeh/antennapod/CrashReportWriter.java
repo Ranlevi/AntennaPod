@@ -1,4 +1,4 @@
-package de.danoeh.antennapod;
+package de.danoeh.antennapod_mh;
 
 import android.os.Build;
 import android.util.Log;

@@ -1,12 +1,12 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
-import de.danoeh.antennapod.PodcastApp;
-import de.danoeh.antennapod.activity.StorageErrorActivity;
+import de.danoeh.antennapod_mh.PodcastApp;
+import de.danoeh.antennapod_mh.activity.StorageErrorActivity;
 import de.danoeh.antennapod.core.ApplicationCallbacks;
 
 public class ApplicationCallbacksImpl implements ApplicationCallbacks {

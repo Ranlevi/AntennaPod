@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 
 import android.content.Intent;
@@ -18,7 +18,7 @@ import de.danoeh.antennapod.BuildConfig;
 import de.danoeh.antennapod.R;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
 import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
-import de.danoeh.antennapod.preferences.PreferenceController;
+import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /** Guides the user through the authentication process */
 

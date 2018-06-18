@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment.gpodnet;
+package de.danoeh.antennapod_mh.fragment.gpodnet;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,12 +16,12 @@ import android.widget.TextView;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.adapter.gpodnet.TagListAdapter;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.adapter.gpodnet.TagListAdapter;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
 import de.danoeh.antennapod.core.gpoddernet.model.GpodnetTag;
-import de.danoeh.antennapod.menuhandler.MenuItemUtils;
+import de.danoeh.antennapod_mh.menuhandler.MenuItemUtils;
 
 public class TagListFragment extends ListFragment {
 

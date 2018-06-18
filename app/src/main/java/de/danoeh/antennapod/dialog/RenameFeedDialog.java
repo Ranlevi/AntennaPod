@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.dialog;
+package de.danoeh.antennapod_mh.dialog;
 
 import android.app.Activity;
 import android.text.InputType;

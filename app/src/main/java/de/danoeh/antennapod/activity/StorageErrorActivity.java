@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -23,7 +23,7 @@ import java.io.File;
 import de.danoeh.antennapod.R;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
 import de.danoeh.antennapod.core.util.StorageUtils;
-import de.danoeh.antennapod.dialog.ChooseDataFolderDialog;
+import de.danoeh.antennapod_mh.dialog.ChooseDataFolderDialog;
 
 /** Is show if there is now external storage available. */
 public class StorageErrorActivity extends AppCompatActivity {

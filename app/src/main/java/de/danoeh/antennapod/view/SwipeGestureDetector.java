@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.view;
+package de.danoeh.antennapod_mh.view;
 
 import android.util.Log;
 import android.view.GestureDetector;

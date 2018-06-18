@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.preferences;
+package de.danoeh.antennapod_mh.preferences;
 
 import android.annotation.TargetApi;
 import android.content.Context;

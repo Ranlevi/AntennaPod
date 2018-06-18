@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,8 +19,8 @@ import java.io.Reader;
 import java.util.ArrayList;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.asynctask.OpmlFeedQueuer;
-import de.danoeh.antennapod.asynctask.OpmlImportWorker;
+import de.danoeh.antennapod_mh.asynctask.OpmlFeedQueuer;
+import de.danoeh.antennapod_mh.asynctask.OpmlImportWorker;
 import de.danoeh.antennapod.core.export.opml.OpmlElement;
 import de.danoeh.antennapod.core.util.LangUtils;
 

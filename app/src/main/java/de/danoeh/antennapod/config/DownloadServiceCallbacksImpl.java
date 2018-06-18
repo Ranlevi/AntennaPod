@@ -1,17 +1,17 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import de.danoeh.antennapod.activity.DownloadAuthenticationActivity;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.adapter.NavListAdapter;
+import de.danoeh.antennapod_mh.activity.DownloadAuthenticationActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.adapter.NavListAdapter;
 import de.danoeh.antennapod.core.DownloadServiceCallbacks;
 import de.danoeh.antennapod.core.feed.Feed;
 import de.danoeh.antennapod.core.service.download.DownloadRequest;
-import de.danoeh.antennapod.fragment.DownloadsFragment;
+import de.danoeh.antennapod_mh.fragment.DownloadsFragment;
 
 
 public class DownloadServiceCallbacksImpl implements DownloadServiceCallbacks {

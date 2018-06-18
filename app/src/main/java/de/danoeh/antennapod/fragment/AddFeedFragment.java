@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.activity.OnlineFeedViewActivity;
-import de.danoeh.antennapod.activity.OpmlImportFromPathActivity;
-import de.danoeh.antennapod.fragment.gpodnet.GpodnetMainFragment;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.OnlineFeedViewActivity;
+import de.danoeh.antennapod_mh.activity.OpmlImportFromPathActivity;
+import de.danoeh.antennapod_mh.fragment.gpodnet.GpodnetMainFragment;
 
 /**
  * Provides actions for adding new podcast subscriptions

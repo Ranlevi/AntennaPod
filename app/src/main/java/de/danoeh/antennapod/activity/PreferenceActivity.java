@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -18,7 +18,7 @@ import java.lang.ref.WeakReference;
 
 import de.danoeh.antennapod.R;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.preferences.PreferenceController;
+import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /**
  * PreferenceActivity for API 11+. In order to change the behavior of the preference UI, see

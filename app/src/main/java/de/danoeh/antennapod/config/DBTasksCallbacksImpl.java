@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 import de.danoeh.antennapod.core.DBTasksCallbacks;
 import de.danoeh.antennapod.core.preferences.UserPreferences;

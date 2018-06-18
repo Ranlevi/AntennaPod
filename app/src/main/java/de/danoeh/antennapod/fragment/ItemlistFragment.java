@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -38,10 +38,10 @@ import org.apache.commons.lang3.Validate;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.FeedInfoActivity;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.adapter.DefaultActionButtonCallback;
-import de.danoeh.antennapod.adapter.FeedItemlistAdapter;
+import de.danoeh.antennapod_mh.activity.FeedInfoActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
+import de.danoeh.antennapod_mh.adapter.DefaultActionButtonCallback;
+import de.danoeh.antennapod_mh.adapter.FeedItemlistAdapter;
 import de.danoeh.antennapod.core.asynctask.FeedRemover;
 import de.danoeh.antennapod.core.dialog.ConfirmationDialog;
 import de.danoeh.antennapod.core.dialog.DownloadRequestErrorDialogCreator;
@@ -66,11 +66,10 @@ import de.danoeh.antennapod.core.storage.DownloadRequester;
 import de.danoeh.antennapod.core.util.FeedItemUtil;
 import de.danoeh.antennapod.core.util.LongList;
 import de.danoeh.antennapod.core.util.gui.MoreContentListFooterUtil;
-import de.danoeh.antennapod.dialog.EpisodesApplyActionFragment;
-import de.danoeh.antennapod.dialog.RenameFeedDialog;
-import de.danoeh.antennapod.menuhandler.FeedItemMenuHandler;
-import de.danoeh.antennapod.menuhandler.FeedMenuHandler;
-import de.danoeh.antennapod.menuhandler.MenuItemUtils;
+import de.danoeh.antennapod_mh.dialog.EpisodesApplyActionFragment;
+import de.danoeh.antennapod_mh.dialog.RenameFeedDialog;
+import de.danoeh.antennapod_mh.menuhandler.FeedItemMenuHandler;
+import de.danoeh.antennapod_mh.menuhandler.FeedMenuHandler;
 import de.greenrobot.event.EventBus;
 import rx.Observable;
 import rx.Subscription;
@@ -183,7 +182,7 @@ public class ItemlistFragment extends ListFragment {
         listFooter = null;
     }
 
-    private final MenuItemUtils.UpdateRefreshMenuItemChecker updateRefreshMenuItemChecker = new MenuItemUtils.UpdateRefreshMenuItemChecker() {
+    private final de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.UpdateRefreshMenuItemChecker updateRefreshMenuItemChecker = new de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.UpdateRefreshMenuItemChecker() {
         @Override
         public boolean isRefreshing() {
             return feed != null && DownloadService.isRunning && DownloadRequester.getInstance().isDownloadingFile(feed);
@@ -202,7 +201,7 @@ public class ItemlistFragment extends ListFragment {
 
             MenuItem searchItem = menu.findItem(R.id.action_search);
             final SearchView sv = (SearchView) MenuItemCompat.getActionView(searchItem);
-            MenuItemUtils.adjustTextColor(getActivity(), sv);
+            de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.adjustTextColor(getActivity(), sv);
             sv.setQueryHint(getString(R.string.search_hint));
             sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
@@ -231,7 +230,7 @@ public class ItemlistFragment extends ListFragment {
             menu.findItem(R.id.episode_actions).setIcon(new IconDrawable(getActivity(),
                     FontAwesomeIcons.fa_gears).color(textColor).actionBarSize());
 
-            isUpdatingFeed = MenuItemUtils.updateRefreshMenuItem(menu, R.id.refresh_item, updateRefreshMenuItemChecker);
+            isUpdatingFeed = de.danoeh.antennapod_mh.menuhandler.MenuItemUtils.updateRefreshMenuItem(menu, R.id.refresh_item, updateRefreshMenuItemChecker);
         }
     }
 

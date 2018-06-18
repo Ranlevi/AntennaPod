@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 
 import android.app.PendingIntent;
@@ -9,8 +9,8 @@ import android.util.Log;
 import org.shredzone.flattr4j.oauth.AccessToken;
 
 import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.activity.FlattrAuthActivity;
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.FlattrAuthActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.FlattrCallbacks;
 
 public class FlattrCallbacksImpl implements FlattrCallbacks {

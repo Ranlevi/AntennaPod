@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.content.ClipData;
 import android.content.Context;
@@ -46,7 +46,7 @@ import de.danoeh.antennapod.core.storage.DownloadRequestException;
 import de.danoeh.antennapod.core.util.IntentUtils;
 import de.danoeh.antennapod.core.util.LangUtils;
 import de.danoeh.antennapod.core.util.syndication.HtmlToPlainText;
-import de.danoeh.antennapod.menuhandler.FeedMenuHandler;
+import de.danoeh.antennapod_mh.menuhandler.FeedMenuHandler;
 import rx.Observable;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;

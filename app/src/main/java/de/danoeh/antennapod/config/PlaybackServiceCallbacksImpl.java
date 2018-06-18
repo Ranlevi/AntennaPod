@@ -1,12 +1,12 @@
-package de.danoeh.antennapod.config;
+package de.danoeh.antennapod_mh.config;
 
 import android.content.Context;
 import android.content.Intent;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.AudioplayerActivity;
-import de.danoeh.antennapod.activity.CastplayerActivity;
-import de.danoeh.antennapod.activity.VideoplayerActivity;
+import de.danoeh.antennapod_mh.activity.AudioplayerActivity;
+import de.danoeh.antennapod_mh.activity.CastplayerActivity;
+import de.danoeh.antennapod_mh.activity.VideoplayerActivity;
 import de.danoeh.antennapod.core.PlaybackServiceCallbacks;
 import de.danoeh.antennapod.core.feed.MediaType;
 

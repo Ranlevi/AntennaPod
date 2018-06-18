@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.dialog;
+package de.danoeh.antennapod_mh.dialog;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

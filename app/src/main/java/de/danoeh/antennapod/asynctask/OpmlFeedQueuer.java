@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.asynctask;
+package de.danoeh.antennapod_mh.asynctask;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -7,7 +7,7 @@ import android.os.AsyncTask;
 
 import java.util.Arrays;
 
-import de.danoeh.antennapod.activity.OpmlImportHolder;
+import de.danoeh.antennapod_mh.activity.OpmlImportHolder;
 import de.danoeh.antennapod.core.R;
 import de.danoeh.antennapod.core.export.opml.OpmlElement;
 import de.danoeh.antennapod.core.feed.Feed;

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.fragment;
+package de.danoeh.antennapod_mh.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,11 +31,11 @@ import java.util.List;
 import java.util.Locale;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.OnlineFeedViewActivity;
-import de.danoeh.antennapod.adapter.itunes.ItunesAdapter;
+import de.danoeh.antennapod_mh.activity.OnlineFeedViewActivity;
+import de.danoeh.antennapod_mh.adapter.itunes.ItunesAdapter;
 import de.danoeh.antennapod.core.ClientConfig;
 import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
-import de.danoeh.antennapod.menuhandler.MenuItemUtils;
+import de.danoeh.antennapod_mh.menuhandler.MenuItemUtils;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -44,7 +44,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-import static de.danoeh.antennapod.adapter.itunes.ItunesAdapter.Podcast;
+import static de.danoeh.antennapod_mh.adapter.itunes.ItunesAdapter.Podcast;
 
 //Searches iTunes store for given string and displays results in a list
 public class ItunesSearchFragment extends Fragment {

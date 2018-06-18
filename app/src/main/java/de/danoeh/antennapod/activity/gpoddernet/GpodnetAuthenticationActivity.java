@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity.gpoddernet;
+package de.danoeh.antennapod_mh.activity.gpoddernet;
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,7 +28,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import de.danoeh.antennapod.BuildConfig;
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
 import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
 import de.danoeh.antennapod.core.gpoddernet.model.GpodnetDevice;

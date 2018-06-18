@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.service;
+package de.danoeh.antennapod_mh.service;
 
 import android.app.PendingIntent;
 import android.app.Service;
@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.RemoteViews;
 
 import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
+import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod.core.feed.FeedItem;
 import de.danoeh.antennapod.core.feed.FeedMedia;
 import de.danoeh.antennapod.core.preferences.UserPreferences;
@@ -24,8 +24,8 @@ import de.danoeh.antennapod.core.service.playback.PlayerStatus;
 import de.danoeh.antennapod.core.storage.DBWriter;
 import de.danoeh.antennapod.core.util.Converter;
 import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.fragment.QueueFragment;
-import de.danoeh.antennapod.receiver.PlayerWidget;
+import de.danoeh.antennapod_mh.fragment.QueueFragment;
+import de.danoeh.antennapod_mh.receiver.PlayerWidget;
 
 /**
  * Updates the state of the player widget
