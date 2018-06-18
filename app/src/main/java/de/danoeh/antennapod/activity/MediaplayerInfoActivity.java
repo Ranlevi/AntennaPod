@@ -26,6 +26,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.viewpagerindicator.CirclePageIndicator;
@@ -105,6 +106,8 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
     private MediaplayerInfoPagerAdapter pagerAdapter;
 
     private Subscription subscription;
+    private ProgressBar progressIndicator;
+    private ImageButton butPlay;
 
     @Override
     protected void onPause() {
@@ -203,7 +206,8 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
         if (resId == R.string.player_preparing_msg
                 || resId == R.string.player_seeking_msg
                 || resId == R.string.player_buffering_msg) {
-            // TODO Show progress bar here
+            progressIndicator.setVisibility(View.VISIBLE);
+            butPlay.setVisibility(View.INVISIBLE);
         }
         if (showToast) {
             Toast.makeText(this, resId, Toast.LENGTH_SHORT).show();
@@ -212,7 +216,8 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
 
     @Override
     protected void clearStatusMsg() {
-        // TODO Hide progress bar here
+        progressIndicator.setVisibility(View.INVISIBLE);
+        butPlay.setVisibility(View.VISIBLE);
     }
 
 
@@ -268,6 +273,9 @@ public abstract class MediaplayerInfoActivity extends MediaplayerActivity implem
 
         butPlaybackSpeed = (Button) findViewById(R.id.butPlaybackSpeed);
         butCastDisconnect = (ImageButton) findViewById(R.id.butCastDisconnect);
+
+        butPlay = (ImageButton) findViewById(R.id.butPlay);
+        progressIndicator = (ProgressBar) findViewById(R.id.progressIndicator);
 
         pager = (ViewPager) findViewById(R.id.pager);
         pagerAdapter = new MediaplayerInfoPagerAdapter(getSupportFragmentManager(), media);

@@ -33,6 +33,7 @@ import com.bumptech.glide.Glide;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.Validate;
 
+import java.util.Arrays;
 import java.util.List;
 
 import de.danoeh.antennapod.R;
@@ -71,8 +72,34 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+
 /**
  * The activity that is shown when the user launches the app.
+ * Ver 1.4 (9000104):
+ *  - Added IEC Podcast, removed Reches Podcast.
+ *  - Fixed rate us message.
+ *  - Removed the auto manifest entry from the AndroidManifest.xml
+ *  - Deleted the auto description.xml file
+ *
+ *  Ver 1.5 (9000105):
+ *  - Fixed splash screen & app icon bug.
+ *
+ *  Ver 1.6 (9000106):
+ *  - Fixed Update bug (Guy Kaplan)
+ *  - Changed Zippi Livni RSS url
+ *  - Fixed About page
+ *  - Replaced long.png
+ *
+ *  Ver 1.7 (9000107) Guy Kaplan
+ *  - Fixed LTR flip of UI (not tested)
+ *  - Added a spinner for streaming loading
+ *
+ *  Ver 1.71 (900171)
+ *  - Added Osim Software
+ *  - Changed Version numbering to 900171 to enable minor revisions
+ *
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -84,6 +111,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
     public static final String PREF_NAME = "MainActivityPrefs";
     public static final String PREF_IS_FIRST_LAUNCH = "prefMainActivityIsFirstLaunch";
     public static final String PREF_LAST_FRAGMENT_TAG = "prefMainActivityLastFragmentTag";
+    private static final String PREF_PRELOADED_FEED_LIST_HASH = "prefMainActivityPreloadedFeedHash";
 
     public static final String EXTRA_NAV_TYPE = "nav_type";
     public static final String EXTRA_NAV_INDEX = "nav_index";
@@ -164,6 +192,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         navList.setOnItemLongClickListener(newListLongClickListener);
         registerForContextMenu(navList);
 
+        //When a podcast is selected from the list - get it's index.
+        //??? only from the list? maybe also from Subscriptions?
         navAdapter.registerDataSetObserver(new DataSetObserver() {
             @Override
             public void onChanged() {
@@ -171,6 +201,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             }
         });
 
+        //Listener for the Settings button
         findViewById(R.id.nav_settings).setOnClickListener(v -> {
             drawerLayout.closeDrawer(navDrawer);
             startActivity(new Intent(MainActivity.this, PreferenceController.getPreferenceActivity()));
@@ -178,6 +209,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
 
         FragmentTransaction transaction = fm.beginTransaction();
 
+        //??? Looking for the Main screen area, and inserting the main fragment.
+        //load the last fragment used, or some default.
         Fragment mainFragment = fm.findFragmentByTag("main");
         if (mainFragment != null) {
             transaction.replace(R.id.main_view, mainFragment);
@@ -192,10 +225,12 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                     // it's not a number, this happens if we removed
                     // a label from the NAV_DRAWER_TAGS
                     // give them a nice default...
-                    loadFragment(QueueFragment.TAG, null);
+                    loadFragment(SubscriptionFragment.TAG, null);
                 }
             }
         }
+
+        //add the player fragment.
         externalPlayerFragment = new ExternalPlayerFragment();
         transaction.replace(R.id.playerFragment, externalPlayerFragment, ExternalPlayerFragment.TAG);
         transaction.commit();
@@ -215,9 +250,10 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         edit.apply();
     }
 
+    //Get the last fragment used from the preference. Default is Subscription.
     private String getLastNavFragment() {
         SharedPreferences prefs = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-        String lastFragment = prefs.getString(PREF_LAST_FRAGMENT_TAG, QueueFragment.TAG);
+        String lastFragment = prefs.getString(PREF_LAST_FRAGMENT_TAG, SubscriptionFragment.TAG);
         Log.d(TAG, "getLastNavFragment() -> " + lastFragment);
         return lastFragment;
     }
@@ -228,10 +264,52 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
             new Handler().postDelayed(() -> drawerLayout.openDrawer(navDrawer), 1500);
 
             // for backward compatibility, we only change defaults for fresh installs
+            //Sets the defalut update to 12 hours
             UserPreferences.setUpdateInterval(12);
 
             SharedPreferences.Editor edit = prefs.edit();
             edit.putBoolean(PREF_IS_FIRST_LAUNCH, false);
+            edit.commit();
+        }
+
+        String[] feeds = new String[]{
+                "https://www.ranlevi.com/feed/osim_software_feed/",
+                "https://www.ranlevi.com/feed/mh_network_feed/",
+                "https://www.ranlevi.com/feed/podcast/",
+                "https://www.ranlevi.com/feed/osimpolitica/",
+                "https://www.ranlevi.com/feed/osim_refua/",
+                "https://www.ranlevi.com/feed/osimtanach/",
+                "https://www.ranlevi.com/feed/sportpod_podcast/",
+                "https://www.ranlevi.com/feed/bizpod/",
+                "https://www.ranlevi.com/feed/osim_shivuk/",
+                "https://www.ranlevi.com/feed/osim_tech/",
+                "https://www.ranlevi.com/feed/osim_tiuol/",
+                "https://www.ranlevi.com/feed/osim_historia_archived_episodes/",
+                "https://malicious.life/feed/podcast/",
+                "https://www.familysounds.co.il/feed/podcast/",
+                "https://www.waterline.ranlevi.com/feed/podcast/",
+                "https://www.cmpod.net/feed/podcast/",
+                "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
+                "http://www.tzipilivni.co.il/feed/podcast"
+        };
+
+        // Calculate the hash code on the list, should change automatically each time
+        // the list changes.
+        int feedsHash = Arrays.hashCode(feeds);
+        if (prefs.getInt(PREF_PRELOADED_FEED_LIST_HASH, 0) != feedsHash) {
+            // List was changed, reload feeds.
+            for (String feedURL : feeds) {
+                Feed feed = new Feed(feedURL, null);
+                try {
+                    DownloadRequester.getInstance().downloadFeed(this, feed);
+                } catch (DownloadRequestException e) {
+                    e.printStackTrace();
+                    Log.e(TAG, "Failed to load feed " + feed, e);
+                }
+            }
+
+            SharedPreferences.Editor edit = prefs.edit();
+            edit.putInt(PREF_PRELOADED_FEED_LIST_HASH, feedsHash);
             edit.commit();
         }
     }
