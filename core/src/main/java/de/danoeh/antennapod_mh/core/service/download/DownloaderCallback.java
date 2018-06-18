@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 /**
  * Callback used by the Downloader-classes to notify the requester that the

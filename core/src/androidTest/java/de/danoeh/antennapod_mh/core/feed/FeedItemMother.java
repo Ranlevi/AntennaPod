@@ -1,9 +1,9 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import java.util.Date;
 
-import static de.danoeh.antennapod.core.feed.FeedImageMother.anyFeedImage;
-import static de.danoeh.antennapod.core.feed.FeedMother.anyFeed;
+import static de.danoeh.antennapod_mh.core.feed.FeedImageMother.anyFeedImage;
+import static de.danoeh.antennapod_mh.core.feed.FeedMother.anyFeed;
 
 class FeedItemMother {
 

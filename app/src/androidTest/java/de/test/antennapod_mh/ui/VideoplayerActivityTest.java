@@ -1,4 +1,4 @@
-package de.test.antennapod.ui;
+package de.test.antennapod_mh.ui;
 
 import android.test.ActivityInstrumentationTestCase2;
 

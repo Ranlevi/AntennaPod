@@ -14,9 +14,9 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetPodcast;
 
 /**
  * Adapter for displaying a list of GPodnetPodcast-Objects.

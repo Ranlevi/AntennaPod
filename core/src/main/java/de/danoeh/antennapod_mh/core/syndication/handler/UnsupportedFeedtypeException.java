@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.syndication.handler;
+package de.danoeh.antennapod_mh.core.syndication.handler;
 
-import de.danoeh.antennapod.core.syndication.handler.TypeGetter.Type;
+import de.danoeh.antennapod_mh.core.syndication.handler.TypeGetter.Type;
 
 public class UnsupportedFeedtypeException extends Exception {
 	private static final long serialVersionUID = 9105878964928170669L;

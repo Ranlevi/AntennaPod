@@ -15,9 +15,9 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import java.util.Arrays;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.IntentUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.IntentUtils;
 
 public class VariableSpeedDialog {
 

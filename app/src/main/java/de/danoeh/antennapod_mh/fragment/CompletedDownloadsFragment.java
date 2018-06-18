@@ -17,15 +17,15 @@ import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod_mh.adapter.DownloadedEpisodesListAdapter;
-import de.danoeh.antennapod.core.feed.EventDistributor;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.util.FeedItemUtil;
+import de.danoeh.antennapod_mh.core.feed.EventDistributor;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.util.FeedItemUtil;
 import de.danoeh.antennapod_mh.dialog.EpisodesApplyActionFragment;
 import rx.Observable;
 import rx.Subscription;

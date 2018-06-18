@@ -10,7 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 public class CrashReportWriter implements Thread.UncaughtExceptionHandler {
 

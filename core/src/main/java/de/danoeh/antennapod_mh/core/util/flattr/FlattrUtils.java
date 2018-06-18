@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.flattr;
+package de.danoeh.antennapod_mh.core.util.flattr;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -26,10 +26,10 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.TimeZone;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.asynctask.FlattrTokenFetcher;
-import de.danoeh.antennapod.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.asynctask.FlattrTokenFetcher;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
 
 /**
  * Utility methods for doing something with flattr.
@@ -42,7 +42,7 @@ public class FlattrUtils {
 
     private static final String HOST_NAME = "de.danoeh.antennapod";
 
-    private static final String PREF_ACCESS_TOKEN = "de.danoeh.antennapod.preference.flattrAccessToken";
+    private static final String PREF_ACCESS_TOKEN = "de.danoeh.antennapod_mh.preference.flattrAccessToken";
 
     private static volatile AccessToken cachedToken;
 

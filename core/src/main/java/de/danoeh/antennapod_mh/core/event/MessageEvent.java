@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.event;
+package de.danoeh.antennapod_mh.core.event;
 
 import android.support.annotation.Nullable;
 

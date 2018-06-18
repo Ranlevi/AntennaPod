@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /**

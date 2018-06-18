@@ -1,11 +1,11 @@
-package de.danoeh.antennapod.core.dialog;
+package de.danoeh.antennapod_mh.core.dialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.R;
+import de.danoeh.antennapod_mh.core.R;
 
 /**
  * Creates an AlertDialog which asks the user to confirm something. Other

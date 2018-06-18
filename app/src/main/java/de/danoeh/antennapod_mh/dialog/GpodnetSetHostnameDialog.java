@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
 
 /**
  * Creates a dialog that lets the user change the hostname for the gpodder.net service.

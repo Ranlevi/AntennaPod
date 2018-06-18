@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 import android.support.annotation.Nullable;
 

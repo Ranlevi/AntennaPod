@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package de.danoeh.antennapod_mh.core.service.playback;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -20,13 +20,13 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.ReentrantLock;
 
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.RewindAfterPauseUtils;
-import de.danoeh.antennapod.core.util.playback.AudioPlayer;
-import de.danoeh.antennapod.core.util.playback.IPlayer;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.core.util.playback.VideoPlayer;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.RewindAfterPauseUtils;
+import de.danoeh.antennapod_mh.core.util.playback.AudioPlayer;
+import de.danoeh.antennapod_mh.core.util.playback.IPlayer;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.util.playback.VideoPlayer;
 
 /**
  * Manages the MediaPlayer object of the PlaybackService.
@@ -120,7 +120,7 @@ public class LocalPSMP extends PlaybackServiceMediaPlayer {
      * <p/>
      * This method requires the playerLock and is executed on the caller's thread.
      *
-     * @see #playMediaObject(de.danoeh.antennapod.core.util.playback.Playable, boolean, boolean, boolean)
+     * @see #playMediaObject(de.danoeh.antennapod_mh.core.util.playback.Playable, boolean, boolean, boolean)
      */
     private void playMediaObject(@NonNull final Playable playable, final boolean forceReset, final boolean stream, final boolean startWhenPrepared, final boolean prepareImmediately) {
         if (!playerLock.isHeldByCurrentThread()) {

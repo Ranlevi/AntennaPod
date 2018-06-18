@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.danoeh.antennapod.core.export;
+package de.danoeh.antennapod_mh.core.export;
 
 public class CommonSymbols {
 

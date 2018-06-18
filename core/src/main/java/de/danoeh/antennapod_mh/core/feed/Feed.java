@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import android.database.Cursor;
 import android.support.annotation.Nullable;
@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.core.asynctask.ImageResource;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.flattr.FlattrStatus;
-import de.danoeh.antennapod.core.util.flattr.FlattrThing;
+import de.danoeh.antennapod_mh.core.asynctask.ImageResource;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrStatus;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrThing;
 
 /**
  * Data Object for a whole feed

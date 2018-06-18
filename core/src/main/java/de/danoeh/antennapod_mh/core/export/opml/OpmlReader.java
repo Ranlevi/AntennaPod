@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.export.opml;
+package de.danoeh.antennapod_mh.core.export.opml;
 
 import android.util.Log;
 
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 
-import de.danoeh.antennapod.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.BuildConfig;
 
 /** Reads OPML documents. */
 public class OpmlReader {

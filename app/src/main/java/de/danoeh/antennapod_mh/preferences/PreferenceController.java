@@ -51,7 +51,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import de.danoeh.antennapod_mh.CrashReportWriter;
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.AboutActivity;
 import de.danoeh.antennapod_mh.activity.DirectoryChooserActivity;
 import de.danoeh.antennapod_mh.activity.MainActivity;
@@ -60,14 +60,14 @@ import de.danoeh.antennapod_mh.activity.PreferenceActivity;
 import de.danoeh.antennapod_mh.activity.PreferenceActivityGingerbread;
 import de.danoeh.antennapod_mh.activity.StatisticsActivity;
 import de.danoeh.antennapod_mh.asynctask.ExportWorker;
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.export.ExportWriter;
-import de.danoeh.antennapod.core.export.html.HtmlWriter;
-import de.danoeh.antennapod.core.export.opml.OpmlWriter;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.GpodnetSyncService;
-import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.export.ExportWriter;
+import de.danoeh.antennapod_mh.core.export.html.HtmlWriter;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlWriter;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.GpodnetSyncService;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrUtils;
 import de.danoeh.antennapod_mh.dialog.AuthenticationDialog;
 import de.danoeh.antennapod_mh.dialog.AutoFlattrPreferenceDialog;
 import de.danoeh.antennapod_mh.dialog.ChooseDataFolderDialog;
@@ -442,7 +442,7 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
             return true;
         });
         ui.findPreference(PREF_FAQ).setOnPreferenceClickListener(preference -> {
-            openInBrowser("http://antennapod.org/faq.html");
+            openInBrowser("http://antennapod_mh.org/faq.html");
             return true;
         });
         ui.findPreference(PREF_SEND_CRASH_REPORT).setOnPreferenceClickListener(preference -> {
@@ -492,7 +492,7 @@ public class PreferenceController implements SharedPreferences.OnSharedPreferenc
                     alert.setMessage(message);
                     alert.setPositiveButton(R.string.send_label, (dialog, which) -> {
                         Uri fileUri = FileProvider.getUriForFile(context.getApplicationContext(),
-                                "de.danoeh.antennapod.provider", output);
+                                "de.danoeh.antennapod_mh.provider", output);
                         Intent sendIntent = new Intent(Intent.ACTION_SEND);
                         sendIntent.putExtra(Intent.EXTRA_SUBJECT,
                                 context.getResources().getText(R.string.opml_export_label));

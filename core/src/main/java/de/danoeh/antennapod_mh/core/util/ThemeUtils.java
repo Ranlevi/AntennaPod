@@ -1,9 +1,9 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.util.Log;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 public class ThemeUtils {
     private ThemeUtils(){}

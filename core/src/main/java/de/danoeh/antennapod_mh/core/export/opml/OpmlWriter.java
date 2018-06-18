@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.export.opml;
+package de.danoeh.antennapod_mh.core.export.opml;
 
 import android.util.Log;
 import android.util.Xml;
@@ -10,9 +10,9 @@ import java.io.Writer;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.core.export.ExportWriter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.export.ExportWriter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 
 /** Writes OPML documents. */
 public class OpmlWriter implements ExportWriter {

@@ -5,10 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
 
 // modified from http://developer.android.com/training/monitoring-device-state/battery-monitoring.html
 // and ConnectivityActionReceiver.java

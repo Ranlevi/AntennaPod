@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.asynctask;
+package de.danoeh.antennapod_mh.core.asynctask;
 
 import android.content.Context;
 import android.util.Log;
@@ -9,9 +9,9 @@ import org.shredzone.flattr4j.model.Flattr;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrUtils;
 
 /**
  * Fetch list of flattred things and flattr status in database in a background thread.

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.asynctask;
+package de.danoeh.antennapod_mh.core.asynctask;
 
 /**
  * Classes that implement this interface provide access to an image resource that can

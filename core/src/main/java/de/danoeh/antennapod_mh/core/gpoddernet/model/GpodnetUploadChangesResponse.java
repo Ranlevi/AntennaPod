@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.gpoddernet.model;
+package de.danoeh.antennapod_mh.core.gpoddernet.model;
 
 import android.support.v4.util.ArrayMap;
 
@@ -9,7 +9,7 @@ import org.json.JSONObject;
 import java.util.Map;
 
 /**
- * Object returned by {@link de.danoeh.antennapod.core.gpoddernet.GpodnetService} in uploadChanges method.
+ * Object returned by {@link de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService} in uploadChanges method.
  */
 public class GpodnetUploadChangesResponse {
 

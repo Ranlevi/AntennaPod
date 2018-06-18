@@ -6,12 +6,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MediaplayerInfoActivity.MediaplayerInfoContentFragment;
 import de.danoeh.antennapod_mh.adapter.ChaptersListAdapter;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.core.util.playback.PlaybackController;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.util.playback.PlaybackController;
 
 
 public class ChaptersFragment extends ListFragment implements MediaplayerInfoContentFragment {

@@ -22,12 +22,12 @@ import android.widget.SeekBar;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.service.playback.PlayerStatus;
-import de.danoeh.antennapod.core.util.playback.ExternalMedia;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.service.playback.PlayerStatus;
+import de.danoeh.antennapod_mh.core.util.playback.ExternalMedia;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
 import de.danoeh.antennapod_mh.view.AspectRatioVideoView;
 
 /**

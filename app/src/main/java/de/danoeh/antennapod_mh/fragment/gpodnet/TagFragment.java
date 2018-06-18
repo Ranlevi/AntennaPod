@@ -8,10 +8,10 @@ import org.apache.commons.lang3.Validate;
 import java.util.List;
 
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetTag;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetPodcast;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetTag;
 
 /**
  * Shows all podcasts from gpodder.net that belong to a specific tag.

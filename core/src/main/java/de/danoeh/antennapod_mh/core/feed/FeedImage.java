@@ -1,11 +1,11 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import android.database.Cursor;
 
 import java.io.File;
 
-import de.danoeh.antennapod.core.asynctask.ImageResource;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.asynctask.ImageResource;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
 
 
 public class FeedImage extends FeedFile implements ImageResource {

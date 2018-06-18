@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.backup;
+package de.danoeh.antennapod_mh.core.backup;
 
 import android.app.backup.BackupAgentHelper;
 import android.app.backup.BackupDataInputStream;
@@ -27,15 +27,15 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.export.opml.OpmlElement;
-import de.danoeh.antennapod.core.export.opml.OpmlReader;
-import de.danoeh.antennapod.core.export.opml.OpmlWriter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
-import de.danoeh.antennapod.core.util.LangUtils;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlElement;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlReader;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlWriter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.util.LangUtils;
 
 public class OpmlBackupAgent extends BackupAgentHelper {
     private static final String OPML_BACKUP_KEY = "opml";

@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetTag;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetTag;
 
 /**
  * Adapter for displaying a list of GPodnetPodcast-Objects.

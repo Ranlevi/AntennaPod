@@ -16,15 +16,15 @@ import android.widget.Toast;
 import com.joanzapata.iconify.widget.IconButton;
 import com.joanzapata.iconify.widget.IconTextView;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.dialog.DownloadRequestErrorDialogCreator;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.service.download.DownloadStatus;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.dialog.DownloadRequestErrorDialogCreator;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.service.download.DownloadStatus;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
 
 /** Displays a list of DownloadStatus entries. */
 public class DownloadLogAdapter extends BaseAdapter {

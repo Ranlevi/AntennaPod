@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.flattr;
+package de.danoeh.antennapod_mh.core.util.flattr;
 
 public interface FlattrThing {
 	public String getTitle();

@@ -1,11 +1,11 @@
-package de.test.antennapod.gpodnet;
+package de.test.antennapod_mh.gpodnet;
 
 import android.test.AndroidTestCase;
 
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetDevice;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetTag;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetDevice;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetTag;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -18,14 +18,14 @@ import java.net.UnknownHostException;
 import java.util.Collections;
 import java.util.Date;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.util.DateUtils;
-import de.danoeh.antennapod.core.util.DownloadError;
-import de.danoeh.antennapod.core.util.StorageUtils;
-import de.danoeh.antennapod.core.util.URIUtil;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.util.DownloadError;
+import de.danoeh.antennapod_mh.core.util.StorageUtils;
+import de.danoeh.antennapod_mh.core.util.URIUtil;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Protocol;

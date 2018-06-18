@@ -11,11 +11,11 @@ import android.widget.TextView;
 
 import org.apache.commons.lang3.Validate;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.DownloadRequest;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.BuildConfig;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.DownloadRequest;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
 
 /**
  * Shows a username and a password text field.

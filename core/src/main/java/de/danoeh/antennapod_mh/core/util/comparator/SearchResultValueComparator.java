@@ -1,7 +1,7 @@
-package de.danoeh.antennapod.core.util.comparator;
+package de.danoeh.antennapod_mh.core.util.comparator;
 
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.SearchResult;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.SearchResult;
 
 import java.util.Comparator;
 

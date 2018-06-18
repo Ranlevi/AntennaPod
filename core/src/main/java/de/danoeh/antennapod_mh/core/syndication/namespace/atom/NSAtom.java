@@ -1,20 +1,20 @@
-package de.danoeh.antennapod.core.syndication.namespace.atom;
+package de.danoeh.antennapod_mh.core.syndication.namespace.atom;
 
 import android.text.TextUtils;
 import android.util.Log;
 
 import org.xml.sax.Attributes;
 
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.syndication.handler.HandlerState;
-import de.danoeh.antennapod.core.syndication.namespace.NSITunes;
-import de.danoeh.antennapod.core.syndication.namespace.NSRSS20;
-import de.danoeh.antennapod.core.syndication.namespace.Namespace;
-import de.danoeh.antennapod.core.syndication.namespace.SyndElement;
-import de.danoeh.antennapod.core.syndication.util.SyndTypeUtils;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.syndication.handler.HandlerState;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSITunes;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSRSS20;
+import de.danoeh.antennapod_mh.core.syndication.namespace.Namespace;
+import de.danoeh.antennapod_mh.core.syndication.namespace.SyndElement;
+import de.danoeh.antennapod_mh.core.syndication.util.SyndTypeUtils;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 
 public class NSAtom extends Namespace {
     private static final String TAG = "NSAtom";

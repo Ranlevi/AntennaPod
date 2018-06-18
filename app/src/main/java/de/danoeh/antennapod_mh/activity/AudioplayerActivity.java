@@ -8,10 +8,10 @@ import android.view.View;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.util.playback.ExternalMedia;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.util.playback.ExternalMedia;
 import de.danoeh.antennapod_mh.dialog.VariableSpeedDialog;
 
 /**

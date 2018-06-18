@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -52,31 +52,31 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.event.DownloadEvent;
-import de.danoeh.antennapod.core.event.FeedItemEvent;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.FeedPreferences;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeAction;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeAction.Action;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.GpodnetSyncService;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
-import de.danoeh.antennapod.core.syndication.handler.FeedHandler;
-import de.danoeh.antennapod.core.syndication.handler.FeedHandlerResult;
-import de.danoeh.antennapod.core.syndication.handler.UnsupportedFeedtypeException;
-import de.danoeh.antennapod.core.util.ChapterUtils;
-import de.danoeh.antennapod.core.util.DownloadError;
-import de.danoeh.antennapod.core.util.InvalidFeedException;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.event.DownloadEvent;
+import de.danoeh.antennapod_mh.core.event.FeedItemEvent;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedPreferences;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeAction;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeAction.Action;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.GpodnetSyncService;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.syndication.handler.FeedHandler;
+import de.danoeh.antennapod_mh.core.syndication.handler.FeedHandlerResult;
+import de.danoeh.antennapod_mh.core.syndication.handler.UnsupportedFeedtypeException;
+import de.danoeh.antennapod_mh.core.util.ChapterUtils;
+import de.danoeh.antennapod_mh.core.util.DownloadError;
+import de.danoeh.antennapod_mh.core.util.InvalidFeedException;
 import de.greenrobot.event.EventBus;
 
 /**
@@ -93,12 +93,12 @@ public class DownloadService extends Service {
      * Cancels one download. The intent MUST have an EXTRA_DOWNLOAD_URL extra that contains the download URL of the
      * object whose download should be cancelled.
      */
-    public static final String ACTION_CANCEL_DOWNLOAD = "action.de.danoeh.antennapod.core.service.cancelDownload";
+    public static final String ACTION_CANCEL_DOWNLOAD = "action.de.danoeh.antennapod_mh.core.service.cancelDownload";
 
     /**
      * Cancels all running downloads.
      */
-    public static final String ACTION_CANCEL_ALL_DOWNLOADS = "action.de.danoeh.antennapod.core.service.cancelAllDownloads";
+    public static final String ACTION_CANCEL_ALL_DOWNLOADS = "action.de.danoeh.antennapod_mh.core.service.cancelAllDownloads";
 
     /**
      * Extra for ACTION_CANCEL_DOWNLOAD

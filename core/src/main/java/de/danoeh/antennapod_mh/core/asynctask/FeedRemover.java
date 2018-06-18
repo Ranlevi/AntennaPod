@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.asynctask;
+package de.danoeh.antennapod_mh.core.asynctask;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -8,10 +8,10 @@ import android.os.AsyncTask;
 
 import java.util.concurrent.ExecutionException;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
 
 /** Removes a feed in the background. */
 public class FeedRemover extends AsyncTask<Void, Void, Void> {

@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import org.apache.commons.lang3.Validate;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 /**
  * Creates a new AlertDialog that displays preferences for auto-flattring to the user.

@@ -44,7 +44,7 @@ android {
         versionCode getMyVersionCode()
         versionName "${getMyVersionName()}"
         testApplicationId "de.test.antennapod"
-        testInstrumentationRunner "de.test.antennapod.AntennaPodTestRunner"
+        testInstrumentationRunner "de.test.antennapod_mh.AntennaPodTestRunner"
         generatedDensities = []
     }
 
@@ -82,7 +82,7 @@ android {
 
         debug {
             applicationIdSuffix ".debug"
-            resValue "string", "provider_authority", "de.danoeh.antennapod.debug.provider"
+            resValue "string", "provider_authority", "de.danoeh.antennapod_mh.debug.provider"
             buildConfigField STRING, FLATTR_APP_KEY, mFlattrAppKey
             buildConfigField STRING, FLATTR_APP_SECRET, mFlattrAppSecret
         }

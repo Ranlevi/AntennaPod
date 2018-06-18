@@ -8,19 +8,19 @@ import com.afollestad.materialdialogs.MaterialDialog;
 
 import org.apache.commons.lang3.Validate;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.dialog.DownloadRequestErrorDialogCreator;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
-import de.danoeh.antennapod.core.util.LongList;
-import de.danoeh.antennapod.core.util.NetworkUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.dialog.DownloadRequestErrorDialogCreator;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.util.LongList;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
 
 /**
  * Default implementation of an ActionButtonCallback

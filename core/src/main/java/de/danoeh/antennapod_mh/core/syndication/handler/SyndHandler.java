@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.handler;
+package de.danoeh.antennapod_mh.core.syndication.handler;
 
 import android.util.Log;
 
@@ -6,16 +6,16 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.syndication.namespace.NSContent;
-import de.danoeh.antennapod.core.syndication.namespace.NSDublinCore;
-import de.danoeh.antennapod.core.syndication.namespace.NSITunes;
-import de.danoeh.antennapod.core.syndication.namespace.NSMedia;
-import de.danoeh.antennapod.core.syndication.namespace.NSRSS20;
-import de.danoeh.antennapod.core.syndication.namespace.NSSimpleChapters;
-import de.danoeh.antennapod.core.syndication.namespace.Namespace;
-import de.danoeh.antennapod.core.syndication.namespace.SyndElement;
-import de.danoeh.antennapod.core.syndication.namespace.atom.NSAtom;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSContent;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSDublinCore;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSITunes;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSMedia;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSRSS20;
+import de.danoeh.antennapod_mh.core.syndication.namespace.NSSimpleChapters;
+import de.danoeh.antennapod_mh.core.syndication.namespace.Namespace;
+import de.danoeh.antennapod_mh.core.syndication.namespace.SyndElement;
+import de.danoeh.antennapod_mh.core.syndication.namespace.atom.NSAtom;
 
 /** Superclass for all SAX Handlers which process Syndication formats */
 public class SyndHandler extends DefaultHandler {

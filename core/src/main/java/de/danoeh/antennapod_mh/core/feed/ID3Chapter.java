@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 public class ID3Chapter extends Chapter {
 	public static final int CHAPTERTYPE_ID3CHAPTER = 2;

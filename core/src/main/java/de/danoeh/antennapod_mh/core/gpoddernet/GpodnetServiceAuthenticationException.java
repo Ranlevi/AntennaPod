@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.gpoddernet;
+package de.danoeh.antennapod_mh.core.gpoddernet;
 
 public class GpodnetServiceAuthenticationException extends GpodnetServiceException {
 

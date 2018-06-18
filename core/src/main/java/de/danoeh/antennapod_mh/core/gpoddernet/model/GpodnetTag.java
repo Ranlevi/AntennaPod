@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.gpoddernet.model;
+package de.danoeh.antennapod_mh.core.gpoddernet.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -7,7 +7,7 @@ import android.content.Intent;
 
 import de.danoeh.antennapod_mh.PodcastApp;
 import de.danoeh.antennapod_mh.activity.StorageErrorActivity;
-import de.danoeh.antennapod.core.ApplicationCallbacks;
+import de.danoeh.antennapod_mh.core.ApplicationCallbacks;
 
 public class ApplicationCallbacksImpl implements ApplicationCallbacks {
 

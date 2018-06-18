@@ -1,9 +1,9 @@
-package de.test.antennapod.util;
+package de.test.antennapod_mh.util;
 
 import java.io.File;
 import java.io.IOException;
 
-import de.danoeh.antennapod.core.util.FileNameGenerator;
+import de.danoeh.antennapod_mh.core.util.FileNameGenerator;
 import android.test.AndroidTestCase;
 import android.text.TextUtils;
 

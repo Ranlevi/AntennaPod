@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.flattr;
+package de.danoeh.antennapod_mh.core.util.flattr;
 
 import java.util.Calendar;
 

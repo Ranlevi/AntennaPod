@@ -1,4 +1,4 @@
-package de.test.antennapod.util.service.download;
+package de.test.antennapod_mh.util.service.download;
 
 import android.support.v4.util.ArrayMap;
 

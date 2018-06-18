@@ -3,12 +3,12 @@ package de.danoeh.antennapod_mh.config;
 import android.content.Context;
 import android.content.Intent;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.AudioplayerActivity;
 import de.danoeh.antennapod_mh.activity.CastplayerActivity;
 import de.danoeh.antennapod_mh.activity.VideoplayerActivity;
-import de.danoeh.antennapod.core.PlaybackServiceCallbacks;
-import de.danoeh.antennapod.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.PlaybackServiceCallbacks;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
 
 
 public class PlaybackServiceCallbacksImpl implements PlaybackServiceCallbacks {

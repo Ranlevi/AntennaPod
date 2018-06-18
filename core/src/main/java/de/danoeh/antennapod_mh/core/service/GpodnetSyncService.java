@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service;
+package de.danoeh.antennapod_mh.core.service;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -16,27 +16,27 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceAuthenticationException;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeAction;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeActionGetResponse;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeActionPostResponse;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetSubscriptionChange;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetUploadChangesResponse;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
-import de.danoeh.antennapod.core.util.NetworkUtils;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceAuthenticationException;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeAction;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeActionGetResponse;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeActionPostResponse;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetSubscriptionChange;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetUploadChangesResponse;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
 
 /**
  * Synchronizes local subscriptions with gpodder.net service. The service should be started with ACTION_SYNC as an action argument.
@@ -49,9 +49,9 @@ public class GpodnetSyncService extends Service {
 
     public static final String ARG_ACTION = "action";
 
-    public static final String ACTION_SYNC = "de.danoeh.antennapod.intent.action.sync";
-    public static final String ACTION_SYNC_SUBSCRIPTIONS = "de.danoeh.antennapod.intent.action.sync_subscriptions";
-    public static final String ACTION_SYNC_ACTIONS = "de.danoeh.antennapod.intent.action.sync_ACTIONS";
+    public static final String ACTION_SYNC = "de.danoeh.antennapod_mh.intent.action.sync";
+    public static final String ACTION_SYNC_SUBSCRIPTIONS = "de.danoeh.antennapod_mh.intent.action.sync_subscriptions";
+    public static final String ACTION_SYNC_ACTIONS = "de.danoeh.antennapod_mh.intent.action.sync_ACTIONS";
 
     private GpodnetService service;
 

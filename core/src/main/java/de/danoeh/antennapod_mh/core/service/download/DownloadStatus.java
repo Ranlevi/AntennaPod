@@ -1,13 +1,13 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 import android.database.Cursor;
 import android.support.annotation.NonNull;
 
 import java.util.Date;
 
-import de.danoeh.antennapod.core.feed.FeedFile;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.DownloadError;
+import de.danoeh.antennapod_mh.core.feed.FeedFile;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.DownloadError;
 
 /** Contains status attributes for one download */
 public class DownloadStatus {

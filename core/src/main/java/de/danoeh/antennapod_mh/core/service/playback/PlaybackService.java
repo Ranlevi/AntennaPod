@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package de.danoeh.antennapod_mh.core.service.playback;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -46,36 +46,36 @@ import com.bumptech.glide.request.target.Target;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.event.MessageEvent;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.feed.SearchResult;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.preferences.PlaybackPreferences;
-import de.danoeh.antennapod.core.preferences.SleepTimerPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.receiver.MediaButtonReceiver;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.FeedSearcher;
-import de.danoeh.antennapod.core.util.IntList;
-import de.danoeh.antennapod.core.util.QueueAccess;
-import de.danoeh.antennapod.core.util.playback.ExternalMedia;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.event.MessageEvent;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.feed.SearchResult;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.preferences.PlaybackPreferences;
+import de.danoeh.antennapod_mh.core.preferences.SleepTimerPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.receiver.MediaButtonReceiver;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.FeedSearcher;
+import de.danoeh.antennapod_mh.core.util.IntList;
+import de.danoeh.antennapod_mh.core.util.QueueAccess;
+import de.danoeh.antennapod_mh.core.util.playback.ExternalMedia;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
 import de.greenrobot.event.EventBus;
 
 /**
  * Controls the MediaPlayer that plays a FeedMedia-file
  */
 public class PlaybackService extends MediaBrowserServiceCompat {
-    public static final String FORCE_WIDGET_UPDATE = "de.danoeh.antennapod.FORCE_WIDGET_UPDATE";
-    public static final String STOP_WIDGET_UPDATE = "de.danoeh.antennapod.STOP_WIDGET_UPDATE";
+    public static final String FORCE_WIDGET_UPDATE = "de.danoeh.antennapod_mh.FORCE_WIDGET_UPDATE";
+    public static final String STOP_WIDGET_UPDATE = "de.danoeh.antennapod_mh.STOP_WIDGET_UPDATE";
     /**
      * Logging tag
      */
@@ -88,56 +88,56 @@ public class PlaybackService extends MediaBrowserServiceCompat {
     /**
      * True if cast session should disconnect.
      */
-    public static final String EXTRA_CAST_DISCONNECT = "extra.de.danoeh.antennapod.core.service.castDisconnect";
+    public static final String EXTRA_CAST_DISCONNECT = "extra.de.danoeh.antennapod_mh.core.service.castDisconnect";
     /**
      * True if media should be streamed.
      */
-    public static final String EXTRA_SHOULD_STREAM = "extra.de.danoeh.antennapod.core.service.shouldStream";
+    public static final String EXTRA_SHOULD_STREAM = "extra.de.danoeh.antennapod_mh.core.service.shouldStream";
     /**
      * True if playback should be started immediately after media has been
      * prepared.
      */
-    public static final String EXTRA_START_WHEN_PREPARED = "extra.de.danoeh.antennapod.core.service.startWhenPrepared";
+    public static final String EXTRA_START_WHEN_PREPARED = "extra.de.danoeh.antennapod_mh.core.service.startWhenPrepared";
 
-    public static final String EXTRA_PREPARE_IMMEDIATELY = "extra.de.danoeh.antennapod.core.service.prepareImmediately";
+    public static final String EXTRA_PREPARE_IMMEDIATELY = "extra.de.danoeh.antennapod_mh.core.service.prepareImmediately";
 
-    public static final String ACTION_PLAYER_STATUS_CHANGED = "action.de.danoeh.antennapod.core.service.playerStatusChanged";
-    public static final String EXTRA_NEW_PLAYER_STATUS = "extra.de.danoeh.antennapod.service.playerStatusChanged.newStatus";
+    public static final String ACTION_PLAYER_STATUS_CHANGED = "action.de.danoeh.antennapod_mh.core.service.playerStatusChanged";
+    public static final String EXTRA_NEW_PLAYER_STATUS = "extra.de.danoeh.antennapod_mh.service.playerStatusChanged.newStatus";
     private static final String AVRCP_ACTION_PLAYER_STATUS_CHANGED = "com.android.music.playstatechanged";
     private static final String AVRCP_ACTION_META_CHANGED = "com.android.music.metachanged";
 
-    public static final String ACTION_PLAYER_NOTIFICATION = "action.de.danoeh.antennapod.core.service.playerNotification";
-    public static final String EXTRA_NOTIFICATION_CODE = "extra.de.danoeh.antennapod.core.service.notificationCode";
-    public static final String EXTRA_NOTIFICATION_TYPE = "extra.de.danoeh.antennapod.core.service.notificationType";
+    public static final String ACTION_PLAYER_NOTIFICATION = "action.de.danoeh.antennapod_mh.core.service.playerNotification";
+    public static final String EXTRA_NOTIFICATION_CODE = "extra.de.danoeh.antennapod_mh.core.service.notificationCode";
+    public static final String EXTRA_NOTIFICATION_TYPE = "extra.de.danoeh.antennapod_mh.core.service.notificationType";
 
     /**
      * If the PlaybackService receives this action, it will stop playback and
      * try to shutdown.
      */
-    public static final String ACTION_SHUTDOWN_PLAYBACK_SERVICE = "action.de.danoeh.antennapod.core.service.actionShutdownPlaybackService";
+    public static final String ACTION_SHUTDOWN_PLAYBACK_SERVICE = "action.de.danoeh.antennapod_mh.core.service.actionShutdownPlaybackService";
 
     /**
      * If the PlaybackService receives this action, it will end playback of the
      * current episode and load the next episode if there is one available.
      */
-    public static final String ACTION_SKIP_CURRENT_EPISODE = "action.de.danoeh.antennapod.core.service.skipCurrentEpisode";
+    public static final String ACTION_SKIP_CURRENT_EPISODE = "action.de.danoeh.antennapod_mh.core.service.skipCurrentEpisode";
 
     /**
      * If the PlaybackService receives this action, it will pause playback.
      */
-    public static final String ACTION_PAUSE_PLAY_CURRENT_EPISODE = "action.de.danoeh.antennapod.core.service.pausePlayCurrentEpisode";
+    public static final String ACTION_PAUSE_PLAY_CURRENT_EPISODE = "action.de.danoeh.antennapod_mh.core.service.pausePlayCurrentEpisode";
 
 
     /**
      * If the PlaybackService receives this action, it will resume playback.
      */
-    public static final String ACTION_RESUME_PLAY_CURRENT_EPISODE = "action.de.danoeh.antennapod.core.service.resumePlayCurrentEpisode";
+    public static final String ACTION_RESUME_PLAY_CURRENT_EPISODE = "action.de.danoeh.antennapod_mh.core.service.resumePlayCurrentEpisode";
 
     /**
      * Custom action used by Android Wear
      */
-    private static final String CUSTOM_ACTION_FAST_FORWARD = "action.de.danoeh.antennapod.core.service.fastForward";
-    private static final String CUSTOM_ACTION_REWIND = "action.de.danoeh.antennapod.core.service.rewind";
+    private static final String CUSTOM_ACTION_FAST_FORWARD = "action.de.danoeh.antennapod_mh.core.service.fastForward";
+    private static final String CUSTOM_ACTION_REWIND = "action.de.danoeh.antennapod_mh.core.service.rewind";
 
 
     /**

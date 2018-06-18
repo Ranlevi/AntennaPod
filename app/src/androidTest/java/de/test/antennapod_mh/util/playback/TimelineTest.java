@@ -1,4 +1,4 @@
-package de.test.antennapod.util.playback;
+package de.test.antennapod_mh.util.playback;
 
 import android.content.Context;
 import android.test.InstrumentationTestCase;
@@ -11,11 +11,11 @@ import org.jsoup.select.Elements;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.core.util.playback.Timeline;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.util.playback.Timeline;
 
 /**
  * Test class for timeline

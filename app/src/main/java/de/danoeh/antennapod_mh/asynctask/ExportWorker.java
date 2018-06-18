@@ -8,10 +8,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-import de.danoeh.antennapod.core.export.ExportWriter;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.util.LangUtils;
+import de.danoeh.antennapod_mh.core.export.ExportWriter;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.util.LangUtils;
 import rx.Observable;
 
 /**

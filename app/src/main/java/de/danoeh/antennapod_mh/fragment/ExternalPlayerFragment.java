@@ -13,12 +13,12 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.core.util.playback.PlaybackController;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.util.playback.PlaybackController;
 
 /**
  * Fragment which is supposed to be displayed outside of the MediaplayerActivity

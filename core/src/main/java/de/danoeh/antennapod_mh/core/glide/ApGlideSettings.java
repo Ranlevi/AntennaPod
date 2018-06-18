@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.glide;
+package de.danoeh.antennapod_mh.core.glide;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 

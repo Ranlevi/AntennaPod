@@ -8,10 +8,10 @@ import android.util.Log;
 
 import org.shredzone.flattr4j.oauth.AccessToken;
 
-import de.danoeh.antennapod.BuildConfig;
+import de.danoeh.antennapod_mh.BuildConfig;
 import de.danoeh.antennapod_mh.activity.FlattrAuthActivity;
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.FlattrCallbacks;
+import de.danoeh.antennapod_mh.core.FlattrCallbacks;
 
 public class FlattrCallbacksImpl implements FlattrCallbacks {
     private static final String TAG = "FlattrCallbacksImpl";

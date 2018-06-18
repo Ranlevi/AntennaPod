@@ -8,10 +8,10 @@ import android.net.NetworkInfo;
 import android.text.TextUtils;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
-import de.danoeh.antennapod.core.util.NetworkUtils;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
 
 public class ConnectivityActionReceiver extends BroadcastReceiver {
 	private static final String TAG = "ConnectivityActionRecvr";

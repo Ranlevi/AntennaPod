@@ -3,10 +3,10 @@ package de.danoeh.antennapod_mh.fragment.gpodnet;
 import java.util.Collections;
 import java.util.List;
 
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetPodcast;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
 
 /**
  * Displays suggestions from gpodder.net

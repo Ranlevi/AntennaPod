@@ -9,17 +9,17 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.adapter.DownloadlistAdapter;
-import de.danoeh.antennapod.core.event.DownloadEvent;
-import de.danoeh.antennapod.core.event.DownloaderUpdate;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.DownloadRequest;
-import de.danoeh.antennapod.core.service.download.Downloader;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.event.DownloadEvent;
+import de.danoeh.antennapod_mh.core.event.DownloaderUpdate;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.DownloadRequest;
+import de.danoeh.antennapod_mh.core.service.download.Downloader;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
 import de.greenrobot.event.EventBus;
 
 /**

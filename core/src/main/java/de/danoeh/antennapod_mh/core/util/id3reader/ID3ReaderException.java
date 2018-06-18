@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.id3reader;
+package de.danoeh.antennapod_mh.core.util.id3reader;
 
 public class ID3ReaderException extends Exception {
 

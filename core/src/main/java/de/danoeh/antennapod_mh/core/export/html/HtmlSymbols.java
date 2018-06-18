@@ -11,9 +11,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.danoeh.antennapod.core.export.html;
+package de.danoeh.antennapod_mh.core.export.html;
 
-import de.danoeh.antennapod.core.export.CommonSymbols;
+import de.danoeh.antennapod_mh.core.export.CommonSymbols;
 
 class HtmlSymbols extends CommonSymbols {
 

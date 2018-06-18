@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[antennapod.english]
+[antennapod_mh.english]
 source_file = core/src/main/res/values/strings.xml
 source_lang = en
 trans.ast_ES = core/src/main/res/values-b+ast/strings.xml
@@ -56,17 +56,17 @@ trans.zh_CN = core/src/main/res/values-zh-rCN/strings.xml
 trans.zh_TW = core/src/main/res/values-zh-rTW/strings.xml
 trans.zh_HK = core/src/main/res/values-zh-rHK/strings.xml
 
-[antennapod.description]
+[antennapod_mh.description]
 file_filter = app/src/main/play/<lang>/listing/fulldescription
 source_file = app/src/main/play/en-US/listing/fulldescription
 source_lang = en
 
-[antennapod.shortdescription]
+[antennapod_mh.shortdescription]
 file_filter = app/src/main/play/<lang>/listing/shortdescription
 source_file = app/src/main/play/en-US/listing/shortdescription
 source_lang = en
 
-[antennapod.changelog]
+[antennapod_mh.changelog]
 file_filter = app/src/main/play/<lang>/whatsnew
 source_file = app/src/main/play/en-US/whatsnew
 source_lang = en

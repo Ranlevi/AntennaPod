@@ -1,4 +1,4 @@
-package de.test.antennapod.util.service.download;
+package de.test.antennapod_mh.util.service.download;
 
 import android.util.Base64;
 import android.util.Log;
@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.zip.GZIPOutputStream;
 
-import de.danoeh.antennapod.BuildConfig;
+import de.danoeh.antennapod_mh.BuildConfig;
 
 /**
  * Http server for testing purposes

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.handler;
+package de.danoeh.antennapod_mh.core.syndication.handler;
 
 import android.support.v4.util.ArrayMap;
 
@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.Stack;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.syndication.namespace.Namespace;
-import de.danoeh.antennapod.core.syndication.namespace.SyndElement;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.syndication.namespace.Namespace;
+import de.danoeh.antennapod_mh.core.syndication.namespace.SyndElement;
 
 /**
  * Contains all relevant information to describe the current state of a

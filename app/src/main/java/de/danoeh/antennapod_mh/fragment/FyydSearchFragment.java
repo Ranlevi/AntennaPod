@@ -20,10 +20,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.OnlineFeedViewActivity;
 import de.danoeh.antennapod_mh.adapter.itunes.ItunesAdapter;
-import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
+import de.danoeh.antennapod_mh.core.service.download.AntennapodHttpClient;
 import de.danoeh.antennapod_mh.menuhandler.MenuItemUtils;
 import de.mfietz.fyydlin.FyydClient;
 import de.mfietz.fyydlin.FyydResponse;

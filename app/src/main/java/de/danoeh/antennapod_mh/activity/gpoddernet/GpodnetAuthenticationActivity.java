@@ -26,15 +26,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.BuildConfig;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetDevice;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.GpodnetSyncService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetDevice;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.GpodnetSyncService;
 
 /**
  * Guides the user through the authentication process

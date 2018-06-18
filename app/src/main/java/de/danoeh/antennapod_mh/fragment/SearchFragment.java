@@ -15,15 +15,15 @@ import android.widget.ListView;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod_mh.adapter.SearchlistAdapter;
-import de.danoeh.antennapod.core.feed.EventDistributor;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedComponent;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.SearchResult;
-import de.danoeh.antennapod.core.storage.FeedSearcher;
+import de.danoeh.antennapod_mh.core.feed.EventDistributor;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedComponent;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.SearchResult;
+import de.danoeh.antennapod_mh.core.storage.FeedSearcher;
 import rx.Observable;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;

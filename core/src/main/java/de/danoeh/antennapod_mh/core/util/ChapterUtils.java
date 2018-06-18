@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -16,13 +16,13 @@ import java.net.URL;
 import java.util.Collections;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.util.comparator.ChapterStartTimeComparator;
-import de.danoeh.antennapod.core.util.id3reader.ChapterReader;
-import de.danoeh.antennapod.core.util.id3reader.ID3ReaderException;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.core.util.vorbiscommentreader.VorbisCommentChapterReader;
-import de.danoeh.antennapod.core.util.vorbiscommentreader.VorbisCommentReaderException;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.util.comparator.ChapterStartTimeComparator;
+import de.danoeh.antennapod_mh.core.util.id3reader.ChapterReader;
+import de.danoeh.antennapod_mh.core.util.id3reader.ID3ReaderException;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.util.vorbiscommentreader.VorbisCommentChapterReader;
+import de.danoeh.antennapod_mh.core.util.vorbiscommentreader.VorbisCommentReaderException;
 
 /**
  * Utility class for getting chapter data from media files.

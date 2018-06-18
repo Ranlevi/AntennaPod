@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.asynctask;
+package de.danoeh.antennapod_mh.core.asynctask;
 
 import android.annotation.TargetApi;
 import android.app.Notification;
@@ -19,14 +19,14 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.util.NetworkUtils;
-import de.danoeh.antennapod.core.util.flattr.FlattrThing;
-import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrThing;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrUtils;
 
 /**
  * Performs a click action in a background thread.

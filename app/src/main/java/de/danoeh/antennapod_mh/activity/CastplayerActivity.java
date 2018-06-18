@@ -7,7 +7,7 @@ import android.view.View;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
 
 /**
  * Activity for controlling the remote playback on a Cast device.

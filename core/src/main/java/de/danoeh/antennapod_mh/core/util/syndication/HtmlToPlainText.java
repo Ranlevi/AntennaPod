@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.syndication;
+package de.danoeh.antennapod_mh.core.util.syndication;
 
 import org.jsoup.helper.StringUtil;
 import org.jsoup.nodes.Element;

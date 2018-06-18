@@ -1,12 +1,12 @@
-package de.test.antennapod.entities;
+package de.test.antennapod_mh.entities;
 
 import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.test.InstrumentationTestCase;
 
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.util.playback.ExternalMedia;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.util.playback.ExternalMedia;
 
 /**
  * Tests for {@link ExternalMedia} entity.

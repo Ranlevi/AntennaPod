@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.preferences;
+package de.danoeh.antennapod_mh.core.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,11 +12,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.locks.ReentrantLock;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeAction;
-import de.danoeh.antennapod.core.service.GpodnetSyncService;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeAction;
+import de.danoeh.antennapod_mh.core.service.GpodnetSyncService;
 
 /**
  * Manages preferences for accessing gpodder.net service
@@ -28,19 +28,19 @@ public class GpodnetPreferences {
     private static final String TAG = "GpodnetPreferences";
 
     private static final String PREF_NAME = "gpodder.net";
-    public static final String PREF_GPODNET_USERNAME = "de.danoeh.antennapod.preferences.gpoddernet.username";
-    public static final String PREF_GPODNET_PASSWORD = "de.danoeh.antennapod.preferences.gpoddernet.password";
-    public static final String PREF_GPODNET_DEVICEID = "de.danoeh.antennapod.preferences.gpoddernet.deviceID";
+    public static final String PREF_GPODNET_USERNAME = "de.danoeh.antennapod_mh.preferences.gpoddernet.username";
+    public static final String PREF_GPODNET_PASSWORD = "de.danoeh.antennapod_mh.preferences.gpoddernet.password";
+    public static final String PREF_GPODNET_DEVICEID = "de.danoeh.antennapod_mh.preferences.gpoddernet.deviceID";
     public static final String PREF_GPODNET_HOSTNAME = "prefGpodnetHostname";
 
 
-    public static final String PREF_LAST_SUBSCRIPTION_SYNC_TIMESTAMP = "de.danoeh.antennapod.preferences.gpoddernet.last_sync_timestamp";
-    public static final String PREF_LAST_EPISODE_ACTIONS_SYNC_TIMESTAMP = "de.danoeh.antennapod.preferences.gpoddernet.last_episode_actions_sync_timestamp";
-    public static final String PREF_SYNC_ADDED = "de.danoeh.antennapod.preferences.gpoddernet.sync_added";
-    public static final String PREF_SYNC_REMOVED = "de.danoeh.antennapod.preferences.gpoddernet.sync_removed";
-    public static final String PREF_SYNC_EPISODE_ACTIONS = "de.danoeh.antennapod.preferences.gpoddernet.sync_queued_episode_actions";
-    public static final String PREF_LAST_SYNC_ATTEMPT_TIMESTAMP = "de.danoeh.antennapod.preferences.gpoddernet.last_sync_attempt_timestamp";
-    public static final String PREF_LAST_SYNC_ATTEMPT_RESULT = "de.danoeh.antennapod.preferences.gpoddernet.last_sync_attempt_result";
+    public static final String PREF_LAST_SUBSCRIPTION_SYNC_TIMESTAMP = "de.danoeh.antennapod_mh.preferences.gpoddernet.last_sync_timestamp";
+    public static final String PREF_LAST_EPISODE_ACTIONS_SYNC_TIMESTAMP = "de.danoeh.antennapod_mh.preferences.gpoddernet.last_episode_actions_sync_timestamp";
+    public static final String PREF_SYNC_ADDED = "de.danoeh.antennapod_mh.preferences.gpoddernet.sync_added";
+    public static final String PREF_SYNC_REMOVED = "de.danoeh.antennapod_mh.preferences.gpoddernet.sync_removed";
+    public static final String PREF_SYNC_EPISODE_ACTIONS = "de.danoeh.antennapod_mh.preferences.gpoddernet.sync_queued_episode_actions";
+    public static final String PREF_LAST_SYNC_ATTEMPT_TIMESTAMP = "de.danoeh.antennapod_mh.preferences.gpoddernet.last_sync_attempt_timestamp";
+    public static final String PREF_LAST_SYNC_ATTEMPT_RESULT = "de.danoeh.antennapod_mh.preferences.gpoddernet.last_sync_attempt_result";
 
     private static String username;
     private static String password;

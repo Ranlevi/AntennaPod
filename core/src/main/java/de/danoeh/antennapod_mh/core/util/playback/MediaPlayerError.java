@@ -1,8 +1,8 @@
-package de.danoeh.antennapod.core.util.playback;
+package de.danoeh.antennapod_mh.core.util.playback;
 
 import android.content.Context;
 import android.media.MediaPlayer;
-import de.danoeh.antennapod.core.R;
+import de.danoeh.antennapod_mh.core.R;
 
 /** Utility class for MediaPlayer errors. */
 public class MediaPlayerError {

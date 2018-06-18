@@ -25,10 +25,10 @@ import java.net.Proxy;
 import java.net.SocketAddress;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
-import de.danoeh.antennapod.core.service.download.ProxyConfig;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.AntennapodHttpClient;
+import de.danoeh.antennapod_mh.core.service.download.ProxyConfig;
 import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

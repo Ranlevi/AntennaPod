@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.support.v4.util.ArrayMap;
 

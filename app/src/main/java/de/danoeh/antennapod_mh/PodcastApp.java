@@ -8,8 +8,8 @@ import com.joanzapata.iconify.Iconify;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.joanzapata.iconify.fonts.MaterialModule;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.feed.EventDistributor;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.feed.EventDistributor;
 import de.danoeh.antennapod_mh.spa.SPAUtil;
 
 /** Main application class. */

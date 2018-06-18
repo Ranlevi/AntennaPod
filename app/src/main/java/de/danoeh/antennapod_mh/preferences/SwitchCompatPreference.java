@@ -6,7 +6,7 @@ import android.os.Build;
 import android.preference.CheckBoxPreference;
 import android.util.AttributeSet;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 
 public class SwitchCompatPreference extends CheckBoxPreference {
 

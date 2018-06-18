@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.util.exception;
+package de.danoeh.antennapod_mh.core.util.exception;
 
-import de.danoeh.antennapod.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
 
 public class MediaFileNotFoundException extends Exception {
 	private static final long serialVersionUID = 1L;

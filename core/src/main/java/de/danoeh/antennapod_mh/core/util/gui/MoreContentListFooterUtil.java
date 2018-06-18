@@ -1,10 +1,10 @@
-package de.danoeh.antennapod.core.util.gui;
+package de.danoeh.antennapod_mh.core.util.gui;
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import de.danoeh.antennapod.core.R;
+import de.danoeh.antennapod_mh.core.R;
 
 /**
  * Utility methods for the more_content_list_footer layout.

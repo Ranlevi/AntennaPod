@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,8 +11,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
 
 /**
  * Implementation of the EpisodeCleanupAlgorithm interface used by AntennaPod.

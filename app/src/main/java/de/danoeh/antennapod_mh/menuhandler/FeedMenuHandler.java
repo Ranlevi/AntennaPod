@@ -17,14 +17,14 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.dialog.ConfirmationDialog;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.util.IntentUtils;
-import de.danoeh.antennapod.core.util.ShareUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.dialog.ConfirmationDialog;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.util.IntentUtils;
+import de.danoeh.antennapod_mh.core.util.ShareUtils;
 
 /**
  * Handles interactions with the FeedItemMenu.

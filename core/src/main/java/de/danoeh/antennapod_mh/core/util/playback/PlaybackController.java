@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.playback;
+package de.danoeh.antennapod_mh.core.util.playback;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -28,18 +28,18 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.preferences.PlaybackPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.service.playback.PlaybackServiceMediaPlayer;
-import de.danoeh.antennapod.core.service.playback.PlayerStatus;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.playback.Playable.PlayableUtils;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.preferences.PlaybackPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackServiceMediaPlayer;
+import de.danoeh.antennapod_mh.core.service.playback.PlayerStatus;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.playback.Playable.PlayableUtils;
 import rx.Observable;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;

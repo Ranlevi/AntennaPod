@@ -32,20 +32,20 @@ import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.dialog.ConfirmationDialog;
-import de.danoeh.antennapod.core.dialog.DownloadRequestErrorDialogCreator;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedFilter;
-import de.danoeh.antennapod.core.feed.FeedPreferences;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.util.IntentUtils;
-import de.danoeh.antennapod.core.util.LangUtils;
-import de.danoeh.antennapod.core.util.syndication.HtmlToPlainText;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.dialog.ConfirmationDialog;
+import de.danoeh.antennapod_mh.core.dialog.DownloadRequestErrorDialogCreator;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedFilter;
+import de.danoeh.antennapod_mh.core.feed.FeedPreferences;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.util.IntentUtils;
+import de.danoeh.antennapod_mh.core.util.LangUtils;
+import de.danoeh.antennapod_mh.core.util.syndication.HtmlToPlainText;
 import de.danoeh.antennapod_mh.menuhandler.FeedMenuHandler;
 import rx.Observable;
 import rx.Subscription;
@@ -57,7 +57,7 @@ import rx.schedulers.Schedulers;
  */
 public class FeedInfoActivity extends AppCompatActivity {
 
-    public static final String EXTRA_FEED_ID = "de.danoeh.antennapod.extra.feedId";
+    public static final String EXTRA_FEED_ID = "de.danoeh.antennapod_mh.extra.feedId";
     private static final String TAG = "FeedInfoActivity";
     private boolean autoDeleteChanged = false;
     private Feed feed;

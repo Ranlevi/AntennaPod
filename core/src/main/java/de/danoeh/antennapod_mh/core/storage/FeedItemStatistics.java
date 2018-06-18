@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.database.Cursor;
 

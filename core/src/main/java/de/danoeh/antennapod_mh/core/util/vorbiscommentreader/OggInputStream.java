@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.vorbiscommentreader;
+package de.danoeh.antennapod_mh.core.util.vorbiscommentreader;
 
 import org.apache.commons.io.IOUtils;
 

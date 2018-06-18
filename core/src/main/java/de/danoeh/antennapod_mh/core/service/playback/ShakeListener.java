@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package de.danoeh.antennapod_mh.core.service.playback;
 
 import android.content.Context;
 import android.hardware.Sensor;

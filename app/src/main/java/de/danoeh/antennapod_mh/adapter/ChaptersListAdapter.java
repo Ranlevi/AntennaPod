@@ -18,12 +18,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.ChapterUtils;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.ChapterUtils;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
 
 public class ChaptersListAdapter extends ArrayAdapter<Chapter> {
 

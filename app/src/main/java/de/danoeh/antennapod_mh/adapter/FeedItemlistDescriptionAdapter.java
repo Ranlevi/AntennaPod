@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 
 /**
  * List adapter for showing a list of FeedItems with their title and description.

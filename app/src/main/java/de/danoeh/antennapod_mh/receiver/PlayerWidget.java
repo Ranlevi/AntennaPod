@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
 import de.danoeh.antennapod_mh.service.PlayerWidgetService;
 
 public class PlayerWidget extends AppWidgetProvider {

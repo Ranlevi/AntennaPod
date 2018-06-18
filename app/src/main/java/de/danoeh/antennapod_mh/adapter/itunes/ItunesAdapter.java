@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.mfietz.fyydlin.SearchHit;
 

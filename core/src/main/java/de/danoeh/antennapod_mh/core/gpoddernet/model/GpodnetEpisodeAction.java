@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.gpoddernet.model;
+package de.danoeh.antennapod_mh.core.gpoddernet.model;
 
 
 import android.text.TextUtils;
@@ -12,9 +12,9 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.TimeZone;
 
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 
 public class GpodnetEpisodeAction {
 

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,15 +14,15 @@ import java.io.File;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedFile;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.DownloadRequest;
-import de.danoeh.antennapod.core.service.download.DownloadService;
-import de.danoeh.antennapod.core.util.FileNameGenerator;
-import de.danoeh.antennapod.core.util.URLChecker;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedFile;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.DownloadRequest;
+import de.danoeh.antennapod_mh.core.service.download.DownloadService;
+import de.danoeh.antennapod_mh.core.util.FileNameGenerator;
+import de.danoeh.antennapod_mh.core.util.URLChecker;
 
 
 /**

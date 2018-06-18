@@ -7,10 +7,10 @@ import android.widget.ImageButton;
 
 import org.apache.commons.lang3.Validate;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
 
 /**
  * Utility methods for the action button that is displayed on the right hand side

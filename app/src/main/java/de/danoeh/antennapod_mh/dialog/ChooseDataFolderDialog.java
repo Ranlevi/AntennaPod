@@ -11,10 +11,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.StorageUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.StorageUtils;
 
 public class ChooseDataFolderDialog {
 

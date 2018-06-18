@@ -1,8 +1,8 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import android.database.Cursor;
 
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
 
 public abstract class Chapter extends FeedComponent {
 

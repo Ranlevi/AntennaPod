@@ -1,7 +1,7 @@
-package de.danoeh.antennapod.core;
+package de.danoeh.antennapod_mh.core;
 
-import de.danoeh.antennapod.core.storage.AutomaticDownloadAlgorithm;
-import de.danoeh.antennapod.core.storage.EpisodeCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.AutomaticDownloadAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.EpisodeCleanupAlgorithm;
 
 /**
  * Callbacks for the DBTasks class of the storage module.

@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.export.opml;
+package de.danoeh.antennapod_mh.core.export.opml;
 
-import de.danoeh.antennapod.core.export.CommonSymbols;
+import de.danoeh.antennapod_mh.core.export.CommonSymbols;
 
 /** Contains symbols for reading and writing OPML documents. */
 public final class OpmlSymbols extends CommonSymbols {

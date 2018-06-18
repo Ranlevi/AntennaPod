@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.asynctask;
+package de.danoeh.antennapod_mh.core.asynctask;
 
 
 import android.annotation.SuppressLint;
@@ -12,10 +12,10 @@ import org.shredzone.flattr4j.exception.FlattrException;
 import org.shredzone.flattr4j.oauth.AccessToken;
 import org.shredzone.flattr4j.oauth.AndroidAuthenticator;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrUtils;
 
 /**
  * Fetches the access token in the background in order to avoid networkOnMainThread exception.

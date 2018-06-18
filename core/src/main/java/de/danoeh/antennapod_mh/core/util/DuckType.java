@@ -1,12 +1,12 @@
 /* Adapted from: http://thinking-in-code.blogspot.com/2008/11/duck-typing-in-java-using-dynamic.html */
 
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-import de.danoeh.antennapod.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.BuildConfig;
 
 /**
  * Allows "duck typing" or dynamic invocation based on method signature rather

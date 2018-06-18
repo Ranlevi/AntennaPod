@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package de.danoeh.antennapod_mh.core.service.playback;
 
 import android.content.Context;
 import android.os.Vibrator;
@@ -12,10 +12,10 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.event.QueueEvent;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.event.QueueEvent;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
 import de.greenrobot.event.EventBus;
 
 

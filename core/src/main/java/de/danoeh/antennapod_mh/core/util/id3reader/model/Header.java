@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.id3reader.model;
+package de.danoeh.antennapod_mh.core.util.id3reader.model;
 
 public abstract class Header {
 

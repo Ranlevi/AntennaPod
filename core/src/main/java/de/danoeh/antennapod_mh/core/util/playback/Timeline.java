@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.playback;
+package de.danoeh.antennapod_mh.core.util.playback;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -17,9 +17,9 @@ import org.jsoup.select.Elements;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.ShownotesProvider;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.ShownotesProvider;
 
 /**
  * Connects chapter information and shownotes of a shownotesProvider, for example by making it possible to use the

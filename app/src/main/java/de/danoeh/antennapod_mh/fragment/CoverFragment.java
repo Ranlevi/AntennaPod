@@ -11,10 +11,10 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MediaplayerInfoActivity.MediaplayerInfoContentFragment;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
 
 /**
  * Displays the cover and the title of a FeedItem.

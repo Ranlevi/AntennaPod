@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.gpoddernet;
+package de.danoeh.antennapod_mh.core.gpoddernet;
 
 import android.support.annotation.NonNull;
 import org.json.JSONArray;
@@ -18,17 +18,17 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetDevice;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeAction;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeActionGetResponse;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeActionPostResponse;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetSubscriptionChange;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetTag;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetUploadChangesResponse;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetDevice;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeAction;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeActionGetResponse;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeActionPostResponse;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetPodcast;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetSubscriptionChange;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetTag;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetUploadChangesResponse;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.service.download.AntennapodHttpClient;
 import okhttp3.Credentials;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -369,10 +369,10 @@ public class GpodnetService {
      * @param deviceId The ID of the device whose subscriptions should be updated.
      * @param added    Collection of feed URLs of added feeds. This Collection MUST NOT contain any duplicates
      * @param removed  Collection of feed URLs of removed feeds. This Collection MUST NOT contain any duplicates
-     * @return a GpodnetUploadChangesResponse. See {@link de.danoeh.antennapod.core.gpoddernet.model.GpodnetUploadChangesResponse}
+     * @return a GpodnetUploadChangesResponse. See {@link de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetUploadChangesResponse}
      * for details.
      * @throws java.lang.IllegalArgumentException                           if username, deviceId, added or removed is null.
-     * @throws de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException if added or removed contain duplicates or if there
+     * @throws de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException if added or removed contain duplicates or if there
      *                                                                      is an authentication error.
      */
     public GpodnetUploadChangesResponse uploadChanges(@NonNull String username,
@@ -446,10 +446,10 @@ public class GpodnetService {
      * This method requires authentication.
      *
      * @param episodeActions    Collection of episode actions.
-     * @return a GpodnetUploadChangesResponse. See {@link de.danoeh.antennapod.core.gpoddernet.model.GpodnetUploadChangesResponse}
+     * @return a GpodnetUploadChangesResponse. See {@link de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetUploadChangesResponse}
      * for details.
      * @throws java.lang.IllegalArgumentException                           if username, deviceId, added or removed is null.
-     * @throws de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException if added or removed contain duplicates or if there
+     * @throws de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException if added or removed contain duplicates or if there
      *                                                                      is an authentication error.
      */
     public GpodnetEpisodeActionPostResponse uploadEpisodeActions(@NonNull Collection<GpodnetEpisodeAction> episodeActions)

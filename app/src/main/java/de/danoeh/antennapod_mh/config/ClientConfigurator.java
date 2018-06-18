@@ -1,7 +1,7 @@
 package de.danoeh.antennapod_mh.config;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.core.ClientConfig;
+import de.danoeh.antennapod_mh.BuildConfig;
+import de.danoeh.antennapod_mh.core.ClientConfig;
 
 /**
  * Configures the ClientConfig class of the core package.

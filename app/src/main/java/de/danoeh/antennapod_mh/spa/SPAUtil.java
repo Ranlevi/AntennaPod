@@ -8,7 +8,7 @@ import android.util.Log;
 
 import org.apache.commons.lang3.Validate;
 
-import de.danoeh.antennapod.BuildConfig;
+import de.danoeh.antennapod_mh.BuildConfig;
 import de.danoeh.antennapod_mh.receiver.SPAReceiver;
 
 /**

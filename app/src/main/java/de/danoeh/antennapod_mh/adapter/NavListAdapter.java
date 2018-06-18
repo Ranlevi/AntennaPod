@@ -28,11 +28,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 import de.danoeh.antennapod_mh.fragment.AddFeedFragment;
 import de.danoeh.antennapod_mh.fragment.AllEpisodesFragment;
 import de.danoeh.antennapod_mh.fragment.DownloadsFragment;

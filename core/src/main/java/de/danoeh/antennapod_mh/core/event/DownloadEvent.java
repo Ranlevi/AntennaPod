@@ -1,9 +1,9 @@
-package de.danoeh.antennapod.core.event;
+package de.danoeh.antennapod_mh.core.event;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.core.service.download.Downloader;
+import de.danoeh.antennapod_mh.core.service.download.Downloader;
 
 public class DownloadEvent {
 

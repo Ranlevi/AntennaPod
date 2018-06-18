@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,10 +10,10 @@ import android.os.Build;
 import android.support.v4.content.FileProvider;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
 
 import java.io.File;
 import java.util.List;

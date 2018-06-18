@@ -14,11 +14,11 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.nineoldandroids.view.ViewHelper;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 
 /**
  * Shows a list of downloaded episodes

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.database.Cursor;
 import android.support.v4.util.ArrayMap;
@@ -11,29 +11,29 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.FeedPreferences;
-import de.danoeh.antennapod.core.feed.ID3Chapter;
-import de.danoeh.antennapod.core.feed.SimpleChapter;
-import de.danoeh.antennapod.core.feed.VorbisCommentChapter;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.DownloadStatus;
-import de.danoeh.antennapod.core.util.LongIntMap;
-import de.danoeh.antennapod.core.util.LongList;
-import de.danoeh.antennapod.core.util.comparator.DownloadStatusComparator;
-import de.danoeh.antennapod.core.util.comparator.FeedItemPubdateComparator;
-import de.danoeh.antennapod.core.util.comparator.PlaybackCompletionDateComparator;
-import de.danoeh.antennapod.core.util.flattr.FlattrThing;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedPreferences;
+import de.danoeh.antennapod_mh.core.feed.ID3Chapter;
+import de.danoeh.antennapod_mh.core.feed.SimpleChapter;
+import de.danoeh.antennapod_mh.core.feed.VorbisCommentChapter;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.DownloadStatus;
+import de.danoeh.antennapod_mh.core.util.LongIntMap;
+import de.danoeh.antennapod_mh.core.util.LongList;
+import de.danoeh.antennapod_mh.core.util.comparator.DownloadStatusComparator;
+import de.danoeh.antennapod_mh.core.util.comparator.FeedItemPubdateComparator;
+import de.danoeh.antennapod_mh.core.util.comparator.PlaybackCompletionDateComparator;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrThing;
 
 /**
  * Provides methods for reading data from the AntennaPod database.
  * In general, all database calls in DBReader-methods are executed on the caller's thread.
  * This means that the caller should make sure that DBReader-methods are not executed on the GUI-thread.
- * This class will use the {@link de.danoeh.antennapod.core.feed.EventDistributor} to notify listeners about changes in the database.
+ * This class will use the {@link de.danoeh.antennapod_mh.core.feed.EventDistributor} to notify listeners about changes in the database.
  */
 public final class DBReader {
 
@@ -298,7 +298,7 @@ public final class DBReader {
      * {@link #getQueue()} if the FeedItems of the queue are not needed.
      *
      * @return A list of IDs sorted by the same order as the queue. The caller can wrap the returned
-     * list in a {@link de.danoeh.antennapod.core.util.QueueAccess} object for easier access to the queue's properties.
+     * list in a {@link de.danoeh.antennapod_mh.core.util.QueueAccess} object for easier access to the queue's properties.
      */
     public static LongList getQueueIDList() {
         Log.d(TAG, "getQueueIDList() called");
@@ -332,7 +332,7 @@ public final class DBReader {
      * {@link #getQueueIDList()} instead.
      *
      * @return A list of FeedItems sorted by the same order as the queue. The caller can wrap the returned
-     * list in a {@link de.danoeh.antennapod.core.util.QueueAccess} object for easier access to the queue's properties.
+     * list in a {@link de.danoeh.antennapod_mh.core.util.QueueAccess} object for easier access to the queue's properties.
      */
     public static List<FeedItem> getQueue() {
         Log.d(TAG, "getQueue() called");

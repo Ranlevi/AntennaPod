@@ -19,15 +19,15 @@ import android.widget.TextView;
 
 import com.nineoldandroids.view.ViewHelper;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
-import de.danoeh.antennapod.core.util.DateUtils;
-import de.danoeh.antennapod.core.util.LongList;
-import de.danoeh.antennapod.core.util.ThemeUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.util.LongList;
+import de.danoeh.antennapod_mh.core.util.ThemeUtils;
 
 /**
  * List adapter for items of feeds that the user has already subscribed to.

@@ -20,9 +20,9 @@ import com.afollestad.materialdialogs.MaterialDialog;
 
 import java.io.File;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.StorageUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.StorageUtils;
 import de.danoeh.antennapod_mh.dialog.ChooseDataFolderDialog;
 
 /** Is show if there is now external storage available. */

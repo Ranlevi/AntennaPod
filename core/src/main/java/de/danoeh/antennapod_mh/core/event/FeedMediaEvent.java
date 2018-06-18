@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.event;
+package de.danoeh.antennapod_mh.core.event;
 
-import de.danoeh.antennapod.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
 
 public class FeedMediaEvent {
 

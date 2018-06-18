@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.glide;
+package de.danoeh.antennapod_mh.core.glide;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -15,10 +15,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 
-import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
-import de.danoeh.antennapod.core.service.download.HttpDownloader;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.util.NetworkUtils;
+import de.danoeh.antennapod_mh.core.service.download.AntennapodHttpClient;
+import de.danoeh.antennapod_mh.core.service.download.HttpDownloader;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

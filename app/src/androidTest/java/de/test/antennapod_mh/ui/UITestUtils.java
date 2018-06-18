@@ -1,4 +1,4 @@
-package de.test.antennapod.ui;
+package de.test.antennapod_mh.ui;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -20,20 +20,20 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.feed.EventDistributor;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.event.QueueEvent;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.playback.PlaybackController;
+import de.danoeh.antennapod_mh.core.feed.EventDistributor;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.event.QueueEvent;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.playback.PlaybackController;
 import de.danoeh.antennapod_mh.fragment.ExternalPlayerFragment;
 import de.greenrobot.event.EventBus;
-import de.test.antennapod.util.service.download.HTTPBin;
-import de.test.antennapod.util.syndication.feedgenerator.RSS2Generator;
+import de.test.antennapod_mh.util.service.download.HTTPBin;
+import de.test.antennapod_mh.util.syndication.feedgenerator.RSS2Generator;
 
 /**
  * Utility methods for UI tests.

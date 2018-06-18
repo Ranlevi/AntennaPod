@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.util;
+package de.danoeh.antennapod_mh.core.syndication.util;
 
 import android.text.TextUtils;
 import android.webkit.MimeTypeMap;

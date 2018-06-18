@@ -1,4 +1,4 @@
-package de.test.antennapod.ui;
+package de.test.antennapod_mh.ui;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,12 +12,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
 import de.danoeh.antennapod_mh.activity.OnlineFeedViewActivity;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
 import de.danoeh.antennapod_mh.fragment.DownloadsFragment;
 import de.danoeh.antennapod_mh.fragment.EpisodesFragment;
 import de.danoeh.antennapod_mh.fragment.PlaybackHistoryFragment;

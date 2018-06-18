@@ -14,16 +14,16 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.export.opml.OpmlElement;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlElement;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 /**
  * Displays the feeds that the OPML-Importer has read and lets the user choose
  * which feeds he wants to import.
  */
 public class OpmlFeedChooserActivity extends AppCompatActivity {
-    public static final String EXTRA_SELECTED_ITEMS = "de.danoeh.antennapod.selectedItems";
+    public static final String EXTRA_SELECTED_ITEMS = "de.danoeh.antennapod_mh.selectedItems";
     private static final String TAG = "OpmlFeedChooserActivity";
     private Button butConfirm;
     private Button butCancel;

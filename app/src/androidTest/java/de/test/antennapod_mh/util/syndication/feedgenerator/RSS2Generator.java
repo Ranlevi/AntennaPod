@@ -1,9 +1,9 @@
-package de.test.antennapod.util.syndication.feedgenerator;
+package de.test.antennapod_mh.util.syndication.feedgenerator;
 
 import android.util.Xml;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 import org.xmlpull.v1.XmlSerializer;
 
 import java.io.IOException;

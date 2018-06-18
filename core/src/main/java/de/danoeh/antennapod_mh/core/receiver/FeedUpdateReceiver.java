@@ -1,14 +1,14 @@
-package de.danoeh.antennapod.core.receiver;
+package de.danoeh.antennapod_mh.core.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBTasks;
-import de.danoeh.antennapod.core.util.NetworkUtils;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBTasks;
+import de.danoeh.antennapod_mh.core.util.NetworkUtils;
 
 /**
  * Refreshes all feeds when it receives an intent

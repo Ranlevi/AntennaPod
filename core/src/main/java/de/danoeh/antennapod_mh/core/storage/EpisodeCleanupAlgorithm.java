@@ -1,8 +1,8 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.content.Context;
 
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 public abstract class EpisodeCleanupAlgorithm {
 

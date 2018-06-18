@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.namespace;
+package de.danoeh.antennapod_mh.core.syndication.namespace;
 
 /** Defines a XML Element that is pushed on the tagstack */
 public class SyndElement {

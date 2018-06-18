@@ -13,12 +13,12 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.nineoldandroids.view.ViewHelper;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedComponent;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.SearchResult;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedComponent;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.SearchResult;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
 
 /**
  * List adapter for search activity.

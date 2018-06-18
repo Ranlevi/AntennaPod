@@ -11,10 +11,10 @@ import org.apache.commons.lang3.Validate;
 
 import java.util.List;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetPodcast;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetService;
+import de.danoeh.antennapod_mh.core.gpoddernet.GpodnetServiceException;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetPodcast;
 import de.danoeh.antennapod_mh.menuhandler.MenuItemUtils;
 
 /**

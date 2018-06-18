@@ -16,8 +16,8 @@ import android.widget.FrameLayout;
 
 import java.lang.ref.WeakReference;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /**

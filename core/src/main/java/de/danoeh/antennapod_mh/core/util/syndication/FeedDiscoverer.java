@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.syndication;
+package de.danoeh.antennapod_mh.core.util.syndication;
 
 import android.net.Uri;
 import android.support.v4.util.ArrayMap;

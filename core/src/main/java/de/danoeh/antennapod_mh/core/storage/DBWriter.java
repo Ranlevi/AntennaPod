@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.app.backup.BackupManager;
 import android.content.Context;
@@ -7,8 +7,8 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.event.MessageEvent;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.event.MessageEvent;
 import org.shredzone.flattr4j.model.Flattr;
 
 import java.io.File;
@@ -24,28 +24,28 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.asynctask.FlattrClickWorker;
-import de.danoeh.antennapod.core.event.FavoritesEvent;
-import de.danoeh.antennapod.core.event.FeedItemEvent;
-import de.danoeh.antennapod.core.event.QueueEvent;
-import de.danoeh.antennapod.core.feed.EventDistributor;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedEvent;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.FeedPreferences;
-import de.danoeh.antennapod.core.gpoddernet.model.GpodnetEpisodeAction;
-import de.danoeh.antennapod.core.preferences.GpodnetPreferences;
-import de.danoeh.antennapod.core.preferences.PlaybackPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.DownloadStatus;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.util.LongList;
-import de.danoeh.antennapod.core.util.flattr.FlattrStatus;
-import de.danoeh.antennapod.core.util.flattr.FlattrThing;
-import de.danoeh.antennapod.core.util.flattr.SimpleFlattrThing;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.asynctask.FlattrClickWorker;
+import de.danoeh.antennapod_mh.core.event.FavoritesEvent;
+import de.danoeh.antennapod_mh.core.event.FeedItemEvent;
+import de.danoeh.antennapod_mh.core.event.QueueEvent;
+import de.danoeh.antennapod_mh.core.feed.EventDistributor;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedEvent;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedPreferences;
+import de.danoeh.antennapod_mh.core.gpoddernet.model.GpodnetEpisodeAction;
+import de.danoeh.antennapod_mh.core.preferences.GpodnetPreferences;
+import de.danoeh.antennapod_mh.core.preferences.PlaybackPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.DownloadStatus;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.util.LongList;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrStatus;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrThing;
+import de.danoeh.antennapod_mh.core.util.flattr.SimpleFlattrThing;
 import de.greenrobot.event.EventBus;
 
 /**

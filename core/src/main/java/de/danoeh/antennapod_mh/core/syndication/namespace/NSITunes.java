@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.namespace;
+package de.danoeh.antennapod_mh.core.syndication.namespace;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -7,8 +7,8 @@ import org.xml.sax.Attributes;
 
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.syndication.handler.HandlerState;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.syndication.handler.HandlerState;
 
 public class NSITunes extends Namespace {
 

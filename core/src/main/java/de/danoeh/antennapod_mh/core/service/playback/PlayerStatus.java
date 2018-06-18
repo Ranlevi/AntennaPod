@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package de.danoeh.antennapod_mh.core.service.playback;
 
 public enum PlayerStatus {
     INDETERMINATE(0),  // player is currently changing its state, listeners should wait until the player has left this state.

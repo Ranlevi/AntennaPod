@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.export.html;
+package de.danoeh.antennapod_mh.core.export.html;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
-import de.danoeh.antennapod.core.export.ExportWriter;
-import de.danoeh.antennapod.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.export.ExportWriter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
 
 /** Writes HTML documents. */
 public class HtmlWriter implements ExportWriter {

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 
 /**
  * Displays a dialog with a username and password text field and an optional checkbox to save username and preferences.

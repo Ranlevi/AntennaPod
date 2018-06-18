@@ -1,12 +1,12 @@
-package de.danoeh.antennapod.core.event;
+package de.danoeh.antennapod_mh.core.event;
 
 import java.util.Arrays;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.service.download.Downloader;
-import de.danoeh.antennapod.core.util.LongList;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.service.download.Downloader;
+import de.danoeh.antennapod_mh.core.util.LongList;
 
 public class DownloaderUpdate {
 

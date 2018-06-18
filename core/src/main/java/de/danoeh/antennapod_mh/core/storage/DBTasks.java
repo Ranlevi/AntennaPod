@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,24 +20,24 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.asynctask.FlattrClickWorker;
-import de.danoeh.antennapod.core.asynctask.FlattrStatusFetcher;
-import de.danoeh.antennapod.core.feed.EventDistributor;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.FeedPreferences;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.GpodnetSyncService;
-import de.danoeh.antennapod.core.service.download.DownloadStatus;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
-import de.danoeh.antennapod.core.util.Converter;
-import de.danoeh.antennapod.core.util.DownloadError;
-import de.danoeh.antennapod.core.util.LongList;
-import de.danoeh.antennapod.core.util.comparator.FeedItemPubdateComparator;
-import de.danoeh.antennapod.core.util.exception.MediaFileNotFoundException;
-import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.asynctask.FlattrClickWorker;
+import de.danoeh.antennapod_mh.core.asynctask.FlattrStatusFetcher;
+import de.danoeh.antennapod_mh.core.feed.EventDistributor;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.GpodnetSyncService;
+import de.danoeh.antennapod_mh.core.service.download.DownloadStatus;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.util.Converter;
+import de.danoeh.antennapod_mh.core.util.DownloadError;
+import de.danoeh.antennapod_mh.core.util.LongList;
+import de.danoeh.antennapod_mh.core.util.comparator.FeedItemPubdateComparator;
+import de.danoeh.antennapod_mh.core.util.exception.MediaFileNotFoundException;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrUtils;
 
 import static android.content.Context.MODE_PRIVATE;
 import static android.provider.Contacts.SettingsColumns.KEY;
@@ -105,8 +105,8 @@ public final class DBTasks {
      *
      * @param context           Used for sending starting Services and Activities.
      * @param media             The FeedMedia object.
-     * @param showPlayer        If true, starts the appropriate player activity ({@link de.danoeh.antennapod.activity.AudioplayerActivity}
-     *                          or {@link de.danoeh.antennapod.activity.VideoplayerActivity}
+     * @param showPlayer        If true, starts the appropriate player activity ({@link de.danoeh.antennapod_mh.activity.AudioplayerActivity}
+     *                          or {@link de.danoeh.antennapod_mh.activity.VideoplayerActivity}
      * @param startWhenPrepared Parameter for the {@link PlaybackService} start intent. If true, playback will start as
      *                          soon as the PlaybackService has finished loading the FeedMedia object's file.
      * @param shouldStream      Parameter for the {@link PlaybackService} start intent. If true, the FeedMedia object's file

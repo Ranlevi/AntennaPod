@@ -1,9 +1,9 @@
-package de.danoeh.antennapod.core.event;
+package de.danoeh.antennapod_mh.core.event;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import de.danoeh.antennapod.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
 
 public class FavoritesEvent {
 

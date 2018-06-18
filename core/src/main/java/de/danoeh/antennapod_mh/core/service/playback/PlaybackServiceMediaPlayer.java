@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package de.danoeh.antennapod_mh.core.service.playback;
 
 import android.content.Context;
 import android.net.wifi.WifiManager;
@@ -10,8 +10,8 @@ import android.view.SurfaceHolder;
 
 import java.util.concurrent.Future;
 
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
 
 
 /*

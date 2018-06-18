@@ -11,10 +11,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.IntentUtils;
-import de.danoeh.antennapod.core.util.StorageUtils;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.IntentUtils;
+import de.danoeh.antennapod_mh.core.util.StorageUtils;
 
 /**
  * Lets the user start the OPML-import process from a path

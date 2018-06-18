@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 import android.os.Bundle;
 import android.os.Parcel;
@@ -6,8 +6,8 @@ import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import de.danoeh.antennapod.core.feed.FeedFile;
-import de.danoeh.antennapod.core.util.URLChecker;
+import de.danoeh.antennapod_mh.core.feed.FeedFile;
+import de.danoeh.antennapod_mh.core.util.URLChecker;
 
 public class DownloadRequest implements Parcelable {
 

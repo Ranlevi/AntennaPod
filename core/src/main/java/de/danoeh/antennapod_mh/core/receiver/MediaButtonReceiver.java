@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.receiver;
+package de.danoeh.antennapod_mh.core.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.KeyEvent;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
 
 /** Receives media button events. */
 public class MediaButtonReceiver extends BroadcastReceiver {
 	private static final String TAG = "MediaButtonReceiver";
-	public static final String EXTRA_KEYCODE = "de.danoeh.antennapod.core.service.extra.MediaButtonReceiver.KEYCODE";
-	public static final String EXTRA_SOURCE = "de.danoeh.antennapod.core.service.extra.MediaButtonReceiver.SOURCE";
+	public static final String EXTRA_KEYCODE = "de.danoeh.antennapod_mh.core.service.extra.MediaButtonReceiver.KEYCODE";
+	public static final String EXTRA_SOURCE = "de.danoeh.antennapod_mh.core.service.extra.MediaButtonReceiver.SOURCE";
 
-	public static final String NOTIFY_BUTTON_RECEIVER = "de.danoeh.antennapod.NOTIFY_BUTTON_RECEIVER";
+	public static final String NOTIFY_BUTTON_RECEIVER = "de.danoeh.antennapod_mh.NOTIFY_BUTTON_RECEIVER";
 
 	@Override
 	public void onReceive(Context context, Intent intent) {

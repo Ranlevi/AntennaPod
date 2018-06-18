@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.id3reader;
+package de.danoeh.antennapod_mh.core.util.id3reader;
 
 import android.util.Log;
 
@@ -8,11 +8,11 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.core.BuildConfig;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.ID3Chapter;
-import de.danoeh.antennapod.core.util.id3reader.model.FrameHeader;
-import de.danoeh.antennapod.core.util.id3reader.model.TagHeader;
+import de.danoeh.antennapod_mh.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.ID3Chapter;
+import de.danoeh.antennapod_mh.core.util.id3reader.model.FrameHeader;
+import de.danoeh.antennapod_mh.core.util.id3reader.model.TagHeader;
 
 public class ChapterReader extends ID3Reader {
     private static final String TAG = "ID3ChapterReader";

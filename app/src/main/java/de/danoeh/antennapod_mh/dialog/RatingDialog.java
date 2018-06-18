@@ -13,7 +13,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 
 public class RatingDialog {
 

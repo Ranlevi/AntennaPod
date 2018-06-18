@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.app.Activity;
 import android.os.Build;
@@ -7,8 +7,8 @@ import android.util.Log;
 
 import java.io.File;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 /**
  * Utility functions for handling storage errors

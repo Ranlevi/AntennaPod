@@ -1,7 +1,7 @@
-package de.danoeh.antennapod.core.syndication.namespace.atom;
+package de.danoeh.antennapod_mh.core.syndication.namespace.atom;
 
-import de.danoeh.antennapod.core.syndication.namespace.Namespace;
-import de.danoeh.antennapod.core.syndication.namespace.SyndElement;
+import de.danoeh.antennapod_mh.core.syndication.namespace.Namespace;
+import de.danoeh.antennapod_mh.core.syndication.namespace.SyndElement;
 import org.apache.commons.lang3.StringEscapeUtils;
 
 /** Represents Atom Element which contains text (content, title, summary). */

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.playback;
+package de.danoeh.antennapod_mh.core.util.playback;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,7 +8,7 @@ import android.view.SurfaceHolder;
 
 import org.antennapod.audio.MediaPlayer;
 
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 public class AudioPlayer extends MediaPlayer implements IPlayer {
 	private static final String TAG = "AudioPlayer";

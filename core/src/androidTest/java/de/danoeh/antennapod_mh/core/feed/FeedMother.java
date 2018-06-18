@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
-import static de.danoeh.antennapod.core.feed.FeedImageMother.anyFeedImage;
+import static de.danoeh.antennapod_mh.core.feed.FeedImageMother.anyFeedImage;
 
 public class FeedMother {
 

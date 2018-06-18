@@ -18,11 +18,11 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.ArrayList;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.asynctask.OpmlFeedQueuer;
 import de.danoeh.antennapod_mh.asynctask.OpmlImportWorker;
-import de.danoeh.antennapod.core.export.opml.OpmlElement;
-import de.danoeh.antennapod.core.util.LangUtils;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlElement;
+import de.danoeh.antennapod_mh.core.util.LangUtils;
 
 /**
  * Base activity for Opml Import - e.g. with code what to do afterwards

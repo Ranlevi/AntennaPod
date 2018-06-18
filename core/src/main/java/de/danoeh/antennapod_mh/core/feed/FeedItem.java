@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import android.database.Cursor;
 import android.support.annotation.NonNull;
@@ -14,12 +14,12 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.asynctask.ImageResource;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.ShownotesProvider;
-import de.danoeh.antennapod.core.util.flattr.FlattrStatus;
-import de.danoeh.antennapod.core.util.flattr.FlattrThing;
+import de.danoeh.antennapod_mh.core.asynctask.ImageResource;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.ShownotesProvider;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrStatus;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrThing;
 
 /**
  * Data Object for a XML message

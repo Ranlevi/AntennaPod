@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package de.danoeh.antennapod_mh.activity;
 
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -13,13 +13,13 @@ import android.view.MenuItem;
 
 import com.google.android.gms.cast.ApplicationMetadata;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.cast.CastConsumer;
-import de.danoeh.antennapod.core.cast.CastManager;
-import de.danoeh.antennapod.core.cast.DefaultCastConsumer;
-import de.danoeh.antennapod.core.cast.SwitchableMediaRouteActionProvider;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.cast.CastConsumer;
+import de.danoeh.antennapod_mh.core.cast.CastManager;
+import de.danoeh.antennapod_mh.core.cast.DefaultCastConsumer;
+import de.danoeh.antennapod_mh.core.cast.SwitchableMediaRouteActionProvider;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackService;
 
 /**
  * Activity that allows for showing the MediaRouter button whenever there's a cast device in the

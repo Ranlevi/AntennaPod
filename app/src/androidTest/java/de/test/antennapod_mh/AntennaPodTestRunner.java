@@ -11,7 +11,7 @@ public class AntennaPodTestRunner extends InstrumentationTestRunner {
     public TestSuite getAllTests() {
         return new TestSuiteBuilder(AntennaPodTestRunner.class)
                 .includeAllPackagesUnderHere()
-                .excludePackages("de.test.antennapod.gpodnet")
+                .excludePackages("de.test.antennapod_mh.gpodnet")
                 .build();
     }
 

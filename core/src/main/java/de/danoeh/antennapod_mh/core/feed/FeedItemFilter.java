@@ -1,12 +1,12 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import android.text.TextUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.util.LongList;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.util.LongList;
 
 public class FeedItemFilter {
     private final String[] mProperties;

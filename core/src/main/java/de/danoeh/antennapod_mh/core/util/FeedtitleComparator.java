@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
-import de.danoeh.antennapod.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.Feed;
 
 import java.util.Comparator;
 

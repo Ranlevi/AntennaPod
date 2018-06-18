@@ -1,7 +1,7 @@
-package de.test.antennapod.util;
+package de.test.antennapod_mh.util;
 
 import android.test.AndroidTestCase;
-import de.danoeh.antennapod.core.util.URIUtil;
+import de.danoeh.antennapod_mh.core.util.URIUtil;
 
 /**
  * Test class for URIUtil

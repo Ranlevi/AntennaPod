@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.namespace;
+package de.danoeh.antennapod_mh.core.syndication.namespace;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -7,11 +7,11 @@ import org.xml.sax.Attributes;
 
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.syndication.handler.HandlerState;
-import de.danoeh.antennapod.core.syndication.namespace.atom.AtomText;
-import de.danoeh.antennapod.core.syndication.util.SyndTypeUtils;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.syndication.handler.HandlerState;
+import de.danoeh.antennapod_mh.core.syndication.namespace.atom.AtomText;
+import de.danoeh.antennapod_mh.core.syndication.util.SyndTypeUtils;
 
 /** Processes tags from the http://search.yahoo.com/mrss/ namespace. */
 public class NSMedia extends Namespace {

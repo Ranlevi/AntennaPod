@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
-import de.danoeh.antennapod.core.util.vorbiscommentreader.VorbisCommentReaderException;
+import de.danoeh.antennapod_mh.core.util.vorbiscommentreader.VorbisCommentReaderException;
 
 import java.util.concurrent.TimeUnit;
 

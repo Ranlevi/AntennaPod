@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.util.Log;
 
@@ -7,7 +7,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import de.danoeh.antennapod.core.BuildConfig;
+import de.danoeh.antennapod_mh.core.BuildConfig;
 
 /**
  * Utility methods for dealing with URL encoding.

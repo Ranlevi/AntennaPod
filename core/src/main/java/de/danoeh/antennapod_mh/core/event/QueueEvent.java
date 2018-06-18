@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.event;
+package de.danoeh.antennapod_mh.core.event;
 
 import android.support.annotation.Nullable;
 
@@ -7,7 +7,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
 
 public class QueueEvent {
 

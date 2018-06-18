@@ -8,11 +8,11 @@ import android.os.AsyncTask;
 import java.util.Arrays;
 
 import de.danoeh.antennapod_mh.activity.OpmlImportHolder;
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.export.opml.OpmlElement;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.storage.DownloadRequestException;
-import de.danoeh.antennapod.core.storage.DownloadRequester;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.export.opml.OpmlElement;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequestException;
+import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
 
 /** Queues items for download in the background. */
 public class OpmlFeedQueuer extends AsyncTask<Void, Void, Void> {

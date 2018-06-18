@@ -13,7 +13,7 @@ import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
 import java.lang.ref.WeakReference;
 
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
 
 class CoverTarget extends GlideDrawableImageViewTarget {
 

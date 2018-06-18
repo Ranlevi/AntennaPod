@@ -1,4 +1,4 @@
-package de.test.antennapod.service.download;
+package de.test.antennapod_mh.service.download;
 
 import android.test.InstrumentationTestCase;
 import android.util.Log;
@@ -6,14 +6,14 @@ import android.util.Log;
 import java.io.File;
 import java.io.IOException;
 
-import de.danoeh.antennapod.core.feed.FeedFile;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.download.DownloadRequest;
-import de.danoeh.antennapod.core.service.download.DownloadStatus;
-import de.danoeh.antennapod.core.service.download.Downloader;
-import de.danoeh.antennapod.core.service.download.HttpDownloader;
-import de.danoeh.antennapod.core.util.DownloadError;
-import de.test.antennapod.util.service.download.HTTPBin;
+import de.danoeh.antennapod_mh.core.feed.FeedFile;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.service.download.DownloadRequest;
+import de.danoeh.antennapod_mh.core.service.download.DownloadStatus;
+import de.danoeh.antennapod_mh.core.service.download.Downloader;
+import de.danoeh.antennapod_mh.core.service.download.HttpDownloader;
+import de.danoeh.antennapod_mh.core.util.DownloadError;
+import de.test.antennapod_mh.util.service.download.HTTPBin;
 
 public class HttpDownloaderTest extends InstrumentationTestCase {
     private static final String TAG = "HttpDownloaderTest";

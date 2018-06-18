@@ -1,7 +1,7 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 import android.content.Context;
-import de.danoeh.antennapod.core.R;
+import de.danoeh.antennapod_mh.core.R;
 
 /** Utility class for Download Errors. */
 public enum DownloadError {

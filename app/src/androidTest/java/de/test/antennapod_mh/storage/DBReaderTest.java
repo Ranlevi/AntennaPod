@@ -1,4 +1,4 @@
-package de.test.antennapod.storage;
+package de.test.antennapod_mh.storage;
 
 import android.content.Context;
 import android.test.InstrumentationTestCase;
@@ -8,15 +8,15 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.FeedItemStatistics;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.LongList;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.FeedItemStatistics;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.LongList;
 
-import static de.test.antennapod.storage.DBTestUtils.saveFeedlist;
+import static de.test.antennapod_mh.storage.DBTestUtils.saveFeedlist;
 
 /**
  * Test class for DBReader

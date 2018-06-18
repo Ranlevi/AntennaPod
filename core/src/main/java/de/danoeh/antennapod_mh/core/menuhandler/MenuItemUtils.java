@@ -1,10 +1,10 @@
-package de.danoeh.antennapod.core.menuhandler;
+package de.danoeh.antennapod_mh.core.menuhandler;
 
 import android.support.v4.view.MenuItemCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import de.danoeh.antennapod.core.R;
+import de.danoeh.antennapod_mh.core.R;
 
 /**
  * Utilities for menu items

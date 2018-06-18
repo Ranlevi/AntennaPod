@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 import android.content.Context;
 
@@ -10,10 +10,10 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.SearchResult;
-import de.danoeh.antennapod.core.util.comparator.SearchResultValueComparator;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.SearchResult;
+import de.danoeh.antennapod_mh.core.util.comparator.SearchResultValueComparator;
 
 /**
  * Performs search on Feeds and FeedItems

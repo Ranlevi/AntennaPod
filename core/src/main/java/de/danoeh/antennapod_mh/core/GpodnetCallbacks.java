@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core;
+package de.danoeh.antennapod_mh.core;
 
 import android.app.PendingIntent;
 import android.content.Context;

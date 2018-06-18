@@ -1,4 +1,4 @@
-package de.test.antennapod.service.playback;
+package de.test.antennapod_mh.service.playback;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -18,17 +18,17 @@ import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.FeedPreferences;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.service.playback.PlaybackServiceMediaPlayer;
-import de.danoeh.antennapod.core.service.playback.LocalPSMP;
-import de.danoeh.antennapod.core.service.playback.PlayerStatus;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.test.antennapod.util.service.download.HTTPBin;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.FeedPreferences;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.service.playback.PlaybackServiceMediaPlayer;
+import de.danoeh.antennapod_mh.core.service.playback.LocalPSMP;
+import de.danoeh.antennapod_mh.core.service.playback.PlayerStatus;
+import de.danoeh.antennapod_mh.core.storage.PodDBAdapter;
+import de.danoeh.antennapod_mh.core.util.playback.Playable;
+import de.test.antennapod_mh.util.service.download.HTTPBin;
 
 /**
  * Test class for LocalPSMP

@@ -15,9 +15,9 @@ import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.event.MessageEvent;
-import de.danoeh.antennapod.core.preferences.SleepTimerPreferences;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.event.MessageEvent;
+import de.danoeh.antennapod_mh.core.preferences.SleepTimerPreferences;
 import de.greenrobot.event.EventBus;
 
 public abstract class SleepTimerDialog {

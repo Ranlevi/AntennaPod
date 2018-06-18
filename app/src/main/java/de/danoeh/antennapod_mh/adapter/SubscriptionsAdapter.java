@@ -14,10 +14,10 @@ import com.bumptech.glide.Glide;
 
 import java.lang.ref.WeakReference;
 
-import de.danoeh.antennapod.R;
+import de.danoeh.antennapod_mh.R;
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.glide.ApGlideSettings;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.glide.ApGlideSettings;
 import de.danoeh.antennapod_mh.fragment.AddFeedFragment;
 import de.danoeh.antennapod_mh.fragment.ItemlistFragment;
 import jp.shts.android.library.TriangleLabelView;

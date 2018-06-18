@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util.playback;
+package de.danoeh.antennapod_mh.core.util.playback;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,12 +7,12 @@ import android.util.Log;
 
 import java.util.List;
 
-import de.danoeh.antennapod.core.asynctask.ImageResource;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.util.ShownotesProvider;
+import de.danoeh.antennapod_mh.core.asynctask.ImageResource;
+import de.danoeh.antennapod_mh.core.feed.Chapter;
+import de.danoeh.antennapod_mh.core.feed.FeedMedia;
+import de.danoeh.antennapod_mh.core.feed.MediaType;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.util.ShownotesProvider;
 
 /**
  * Interface for objects that can be played by the PlaybackService.

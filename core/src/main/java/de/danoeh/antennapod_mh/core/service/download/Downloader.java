@@ -1,12 +1,12 @@
-package de.danoeh.antennapod.core.service.download;
+package de.danoeh.antennapod_mh.core.service.download;
 
 import android.content.Context;
 import android.net.wifi.WifiManager;
 
 import java.util.concurrent.Callable;
 
-import de.danoeh.antennapod.core.ClientConfig;
-import de.danoeh.antennapod.core.R;
+import de.danoeh.antennapod_mh.core.ClientConfig;
+import de.danoeh.antennapod_mh.core.R;
 
 /**
  * Downloads files

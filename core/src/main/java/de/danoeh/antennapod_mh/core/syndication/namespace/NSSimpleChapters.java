@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.namespace;
+package de.danoeh.antennapod_mh.core.syndication.namespace;
 
 import android.util.Log;
 
@@ -6,10 +6,10 @@ import org.xml.sax.Attributes;
 
 import java.util.ArrayList;
 
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.SimpleChapter;
-import de.danoeh.antennapod.core.syndication.handler.HandlerState;
-import de.danoeh.antennapod.core.util.DateUtils;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.feed.SimpleChapter;
+import de.danoeh.antennapod_mh.core.syndication.handler.HandlerState;
+import de.danoeh.antennapod_mh.core.util.DateUtils;
 
 public class NSSimpleChapters extends Namespace {
     private static final String TAG = "NSSimpleChapters";

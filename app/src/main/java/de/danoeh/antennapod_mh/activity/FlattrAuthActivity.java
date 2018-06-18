@@ -14,10 +14,10 @@ import android.widget.TextView;
 
 import org.shredzone.flattr4j.exception.FlattrException;
 
-import de.danoeh.antennapod.BuildConfig;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.flattr.FlattrUtils;
+import de.danoeh.antennapod_mh.BuildConfig;
+import de.danoeh.antennapod_mh.R;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.util.flattr.FlattrUtils;
 import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /** Guides the user through the authentication process */

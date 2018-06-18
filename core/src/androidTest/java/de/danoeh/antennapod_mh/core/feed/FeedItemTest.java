@@ -1,8 +1,8 @@
-package de.danoeh.antennapod.core.feed;
+package de.danoeh.antennapod_mh.core.feed;
 
 import android.test.AndroidTestCase;
 
-import static de.danoeh.antennapod.core.feed.FeedItemMother.anyFeedItemWithImage;
+import static de.danoeh.antennapod_mh.core.feed.FeedItemMother.anyFeedItemWithImage;
 
 public class FeedItemTest extends AndroidTestCase {
 

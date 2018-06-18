@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.syndication.namespace;
+package de.danoeh.antennapod_mh.core.syndication.namespace;
 
-import de.danoeh.antennapod.core.syndication.handler.HandlerState;
+import de.danoeh.antennapod_mh.core.syndication.handler.HandlerState;
 import org.xml.sax.Attributes;
 
 

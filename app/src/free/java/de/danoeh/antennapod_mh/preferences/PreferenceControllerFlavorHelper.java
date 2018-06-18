@@ -1,6 +1,6 @@
 package de.danoeh.antennapod_mh.preferences;
 
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 import de.danoeh.antennapod_mh.preferences.PreferenceController;
 
 /**

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.util;
+package de.danoeh.antennapod_mh.core.util;
 
 /** Thrown if a feed has invalid attribute values. */
 public class InvalidFeedException extends Exception {

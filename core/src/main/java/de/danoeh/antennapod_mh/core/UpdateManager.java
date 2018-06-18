@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core;
+package de.danoeh.antennapod_mh.core;
 
 
 import android.content.Context;
@@ -13,12 +13,12 @@ import org.antennapod.audio.MediaPlayer;
 import java.io.File;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedImage;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
+import de.danoeh.antennapod_mh.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.FeedImage;
+import de.danoeh.antennapod_mh.core.feed.FeedItem;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.storage.DBReader;
+import de.danoeh.antennapod_mh.core.storage.DBWriter;
 
 /*
  * This class's job is do perform maintenance tasks whenever the app has been updated

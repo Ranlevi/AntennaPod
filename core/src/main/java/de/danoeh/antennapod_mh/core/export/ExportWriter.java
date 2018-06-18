@@ -11,13 +11,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.danoeh.antennapod.core.export;
+package de.danoeh.antennapod_mh.core.export;
 
 import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.Feed;
 
 public interface ExportWriter {
 

@@ -1,6 +1,6 @@
-package de.danoeh.antennapod.core.syndication.handler;
+package de.danoeh.antennapod_mh.core.syndication.handler;
 
-import de.danoeh.antennapod.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.Feed;
 import org.apache.commons.io.input.XmlStreamReader;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;

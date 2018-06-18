@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.syndication.handler;
+package de.danoeh.antennapod_mh.core.syndication.handler;
 
 import android.util.Log;
 
@@ -13,7 +13,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Reader;
 
-import de.danoeh.antennapod.core.feed.Feed;
+import de.danoeh.antennapod_mh.core.feed.Feed;
 
 /** Gets the type of a specific feed by reading the root element. */
 public class TypeGetter {

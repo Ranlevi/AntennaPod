@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.preferences;
+package de.danoeh.antennapod_mh.core.preferences;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -24,14 +24,14 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.receiver.FeedUpdateReceiver;
-import de.danoeh.antennapod.core.service.download.ProxyConfig;
-import de.danoeh.antennapod.core.storage.APCleanupAlgorithm;
-import de.danoeh.antennapod.core.storage.APNullCleanupAlgorithm;
-import de.danoeh.antennapod.core.storage.APQueueCleanupAlgorithm;
-import de.danoeh.antennapod.core.storage.EpisodeCleanupAlgorithm;
-import de.danoeh.antennapod.core.util.Converter;
+import de.danoeh.antennapod_mh.core.R;
+import de.danoeh.antennapod_mh.core.receiver.FeedUpdateReceiver;
+import de.danoeh.antennapod_mh.core.service.download.ProxyConfig;
+import de.danoeh.antennapod_mh.core.storage.APCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.APNullCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.APQueueCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.storage.EpisodeCleanupAlgorithm;
+import de.danoeh.antennapod_mh.core.util.Converter;
 
 /**
  * Provides access to preferences set by the user in the settings screen. A

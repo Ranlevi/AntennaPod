@@ -5,7 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import de.danoeh.antennapod_mh.activity.MainActivity;
-import de.danoeh.antennapod.core.GpodnetCallbacks;
+import de.danoeh.antennapod_mh.core.GpodnetCallbacks;
 
 
 public class GpodnetCallbacksImpl implements GpodnetCallbacks {

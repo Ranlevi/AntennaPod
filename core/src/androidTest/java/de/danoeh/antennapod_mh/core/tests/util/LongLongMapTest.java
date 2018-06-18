@@ -1,8 +1,8 @@
-package de.danoeh.antennapod.core.tests.util;
+package de.danoeh.antennapod_mh.core.tests.util;
 
 import android.test.AndroidTestCase;
 
-import de.danoeh.antennapod.core.util.LongIntMap;
+import de.danoeh.antennapod_mh.core.util.LongIntMap;
 
 public class LongLongMapTest extends AndroidTestCase {
 

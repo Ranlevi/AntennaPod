@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.glide;
+package de.danoeh.antennapod_mh.core.glide;
 
 import android.content.Context;
 
@@ -10,7 +10,7 @@ import com.bumptech.glide.module.GlideModule;
 
 import java.io.InputStream;
 
-import de.danoeh.antennapod.core.preferences.UserPreferences;
+import de.danoeh.antennapod_mh.core.preferences.UserPreferences;
 
 /**
  * {@see com.bumptech.glide.integration.okhttp.OkHttpGlideModule}

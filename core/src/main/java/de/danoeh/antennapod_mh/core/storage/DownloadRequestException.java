@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.storage;
+package de.danoeh.antennapod_mh.core.storage;
 
 /**
  * Thrown by the DownloadRequester if a download request contains invalid data
