@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.danoeh.antennapod"
+    package="de.danoeh.antennapod_mh"
     android:installLocation="auto"
     android:versionCode="1060402"
     android:versionName="1.71">
@@ -157,7 +157,7 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
 
                 <data
-                    android:host="de.danoeh.antennapod"
+                    android:host="de.danoeh.antennapod_mh"
                     android:scheme="flattr4j"/>
             </intent-filter>
         </activity>
@@ -367,7 +367,7 @@
                 <action android:name="android.intent.action.PACKAGE_REPLACED"/>
 
                 <data
-                    android:path="de.danoeh.antennapod"
+                    android:path="de.danoeh.antennapod_mh"
                     android:scheme="package"/>
             </intent-filter>
         </receiver>

@@ -61,7 +61,7 @@ public class RatingDialog {
         if(context == null) {
             return;
         }
-        final String appPackage = "de.danoeh.antennapod";
+        final String appPackage = "de.danoeh.antennapod_mh";
         final Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=" + appPackage);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

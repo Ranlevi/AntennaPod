@@ -4,6 +4,8 @@
     tools:ignore="MissingTranslation">
 
     <!-- Activitiy and fragment titles -->
+    <string name="app_name" translate="false">AntennaPod</string>
+    <string name="provider_authority" translate="false">de.danoeh.antennapod_mh.provider</string>
     <string name="feeds_label">Feeds</string>
     <string name="statistics_label">Statistics</string>
     <string name="add_feed_label">Add Podcast</string>
@@ -180,6 +182,8 @@
     <string name="download_failed">failed</string>
     <string name="download_pending">Download pending</string>
     <string name="download_running">Download running</string>
+    <string name="download_error_details">Details</string>
+    <string name="download_error_details_message">%1$s \n\nFile URL:\n%2$s</string>
     <string name="download_error_device_not_found">Storage Device not found</string>
     <string name="download_error_insufficient_space">Insufficient Space</string>
     <string name="download_error_file_error">File Error</string>
@@ -268,7 +272,7 @@
     <string name="action_forbidden_msg">AntennaPod has no permission for this action. The reason for this could be that the access token of AntennaPod to your account has been revoked. You can either re-reauthenticate or visit the website of the thing instead.</string>
     <string name="access_revoked_title">Access revoked</string>
     <string name="access_revoked_info">You have successfully revoked AntennaPod\'s access token to your account. In order to complete the process, you have to remove this app from the list of approved applications in your account settings on the flattr website.</string>
-    
+
     <!-- Flattr -->
     <string name="flattr_click_success">Flattr\'ed one thing!</string>
     <string name="flattr_click_success_count">Flattr\'ed %d things!</string>
@@ -309,7 +313,7 @@
     <string name="pref_unpauseOnHeadsetReconnect_sum">Resume playback when the headphones are reconnected</string>
     <string name="pref_unpauseOnBluetoothReconnect_sum">Resume playback when bluetooth reconnects</string>
     <string name="pref_hardwareForwardButtonSkips_title">Forward Button Skips</string>
-    <string name="pref_hardwareForwardButtonSkips_sum">When pressing a forward button on a bluetooth-connected device skip to the next episode instead of fast-forwarding</string>
+    <string name="pref_hardwareForwardButtonSkips_sum">When pressing a hardware forward button skip to the next episode instead of fast-forwarding</string>
     <string name="pref_hardwarePreviousButtonRestarts_title">Previous button restarts</string>
     <string name="pref_hardwarePreviousButtonRestarts_sum">When pressing a hardware previous button restart playing the current episode instead of rewinding</string>
     <string name="pref_followQueue_sum">Jump to next queue item when playback completes</string>
@@ -473,8 +477,8 @@
     <string name="html_export_label">HTML export</string>
     <string name="exporting_label">Exporting&#8230;</string>
     <string name="export_error_label">Export error</string>
-    <string name="opml_export_success_title">OPML Export successful.</string>
-    <string name="opml_export_success_sum">The .opml file was written to:\u0020</string>
+    <string name="export_success_title">Export successful</string>
+    <string name="export_success_sum">The exported file was written to:\n\n%1$s</string>
     <string name="opml_import_ask_read_permission">Access to external storage is required to read the OPML file</string>
 
     <!-- Sleep timer -->
@@ -600,7 +604,7 @@
     <string name="filter">Filter</string>
 
     <string name="search_fyyd_label">Search fyyd</string>
-    
+
     <!-- Episodes apply actions -->
     <string name="all_label">All</string>
     <string name="selected_all_label">Selected all Episodes</string>
@@ -658,6 +662,15 @@
     <string name="proxy_host_empty_error">Host can not be empty</string>
     <string name="proxy_host_invalid_error">Host is not a valid IP address or domain</string>
     <string name="proxy_port_invalid_error">Port not valid</string>
+
+    <!-- Database import/export -->
+    <string name="import_export">Database import/export</string>
+    <string name="import_export_warning">This experimental function can be used to transfer your subscriptions and played episodes to another device.\n\nExported databases can only be imported when using the same version of AntennaPod. Otherwise, this function will lead to unexpected behavior.\n\nAfter importing, episodes might be displayed as downloaded even though they are not. Just press the play button of the episodes to make AntennaPod detect this.</string>
+    <string name="label_import">Import</string>
+    <string name="label_export">Export</string>
+    <string name="import_select_file">Select file to import</string>
+    <string name="export_ok">Export successful.</string>
+    <string name="import_ok">Import successful.\n\nPlease press OK to restart AntennaPod</string>
 
     <!-- Casting -->
     <string name="cast_media_route_menu_title">Play on&#8230;</string>

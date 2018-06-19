@@ -1,4 +1,4 @@
-package de.test.antennapod;
+package de.test.antennapod_mh;
 
 import android.test.InstrumentationTestRunner;
 import android.test.suitebuilder.TestSuiteBuilder;

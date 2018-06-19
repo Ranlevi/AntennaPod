@@ -43,7 +43,7 @@ android {
         multiDexEnabled true
         versionCode getMyVersionCode()
         versionName "${getMyVersionName()}"
-        testApplicationId "de.test.antennapod"
+        testApplicationId "de.test.antennapod_mh"
         testInstrumentationRunner "de.test.antennapod_mh.AntennaPodTestRunner"
         generatedDensities = []
     }
