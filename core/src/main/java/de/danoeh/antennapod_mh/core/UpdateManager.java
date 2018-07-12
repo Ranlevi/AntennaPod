@@ -43,7 +43,10 @@ public class UpdateManager {
         PackageManager pm = context.getPackageManager();
         try {
             PackageInfo info = pm.getPackageInfo(context.getPackageName(), 0);
-            currentVersionCode = info.versionCode;
+
+            // Guyk: Our version codes contain one digit more than antennapod's version codes
+            // We devide their version code by 10 to have our match their version check.
+            currentVersionCode = info.versionCode / 10;
         } catch (PackageManager.NameNotFoundException e) {
             Log.e(TAG, "Failed to obtain package info for package name: " + context.getPackageName(), e);
             currentVersionCode = 0;
