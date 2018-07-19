@@ -100,6 +100,10 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  - Added Osim Software
  *  - Changed Version numbering to 900171 to enable minor revisions
  *
+ *  Ver 1.8 (10604020) Guy Kaplan
+ *  - Changed Version Code to conform to Github Project.
+ *  - Added Several new podcasts for the Hinuchit.
+ *
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -290,7 +294,13 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.waterline.ranlevi.com/feed/podcast/",
                 "https://www.cmpod.net/feed/podcast/",
                 "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
-                "http://www.tzipilivni.co.il/feed/podcast"
+                "http://www.tzipilivni.co.il/feed/podcast",
+                "https://www.ranlevi.com/feed/discount_failure_to_success/",
+                "http://www.23tv.co.il/podcasts//RssFiles/1891669519085332362318670163129206681262536185237185.xml",
+                "http://www.23tv.co.il/podcasts//RssFiles/13494472242339531892112926166689245150147198249.xml",
+                "http://www.23tv.co.il/podcasts//RssFiles/1581762345314425325423167216238247459322011458484685.xml",
+                "http://www.23tv.co.il/podcasts//RssFiles/230228249131742352151301221072161871915010117023186245221.xml",
+                "http://www.23tv.co.il/podcasts//RssFiles/246411021292372130711246131552371520515019920916195.xml"
         };
 
         // Calculate the hash code on the list, should change automatically each time
