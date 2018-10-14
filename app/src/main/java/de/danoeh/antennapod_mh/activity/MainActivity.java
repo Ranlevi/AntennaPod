@@ -104,6 +104,10 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  - Changed Version Code to conform to Github Project.
  *  - Added Several new podcasts for the Hinuchit.
  *
+ *  Ver 1.81 (10604020)
+ *  - Added Osim Pshia'a
+ *  - Changed Zippi Livni RSS (original wasn't updated)
+ *
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -280,6 +284,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.ranlevi.com/feed/osim_software_feed/",
                 "https://www.ranlevi.com/feed/mh_network_feed/",
                 "https://www.ranlevi.com/feed/podcast/",
+                "https://www.ranlevi.com/feed/osim_pshia/",
                 "https://www.ranlevi.com/feed/osimpolitica/",
                 "https://www.ranlevi.com/feed/osim_refua/",
                 "https://www.ranlevi.com/feed/osimtanach/",
@@ -294,7 +299,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.waterline.ranlevi.com/feed/podcast/",
                 "https://www.cmpod.net/feed/podcast/",
                 "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
-                "http://www.tzipilivni.co.il/feed/podcast",
+                "https://tzipilivni.podbean.com/feed.xml",
                 "https://www.ranlevi.com/feed/discount_failure_to_success/",
                 "http://www.23tv.co.il/podcasts//RssFiles/1891669519085332362318670163129206681262536185237185.xml",
                 "http://www.23tv.co.il/podcasts//RssFiles/13494472242339531892112926166689245150147198249.xml",
