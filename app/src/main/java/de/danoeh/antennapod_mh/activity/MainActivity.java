@@ -104,10 +104,13 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  - Changed Version Code to conform to Github Project.
  *  - Added Several new podcasts for the Hinuchit.
  *
- *  Ver 1.81 (10604020)
+ *  Ver 1.81 (10604021)
  *  - Added Osim Pshia'a
  *  - Changed Zippi Livni RSS (original wasn't updated)
  *
+ *  Ver 1.82 (10604023)
+ *  - Added Osim Rechev & Hatshuva
+ *  - Target sdk level 26
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -283,6 +286,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         String[] feeds = new String[]{
                 "https://www.ranlevi.com/feed/osim_software_feed/",
                 "https://www.ranlevi.com/feed/mh_network_feed/",
+                "https://www.ranlevi.com/feed/hatshuva/",
+                "https://www.ranlevi.com/feed/osim_rechev/",
                 "https://www.ranlevi.com/feed/podcast/",
                 "https://www.ranlevi.com/feed/osim_pshia/",
                 "https://www.ranlevi.com/feed/osimpolitica/",

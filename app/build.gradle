@@ -34,8 +34,8 @@ def getMyVersionCode() {
 }
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -135,6 +135,7 @@ configurations {
 dependencies {
     freeDebugCompile project(path: ":core", configuration: "freeDebug")
     freeReleaseCompile project(path: ":core", configuration: "freeRelease")
+
     // free build hack: skip some dependencies
     if (!doFreeBuild()) {
         playDebugCompile project(path: ":core", configuration: "playDebug")
@@ -161,6 +162,7 @@ dependencies {
     compile "de.greenrobot:eventbus:$eventbusVersion"
     compile "io.reactivex:rxandroid:$rxAndroidVersion"
     compile "io.reactivex:rxjava:$rxJavaVersion"
+
     // And ProGuard rules for RxJava!
     compile "com.artemzin.rxjava:proguard-rules:$rxJavaRulesVersion"
     compile "com.joanzapata.iconify:android-iconify-fontawesome:$iconifyVersion"
@@ -169,14 +171,11 @@ dependencies {
         transitive = true
     }
     compile "com.yqritc:recyclerview-flexibledivider:$recyclerviewFlexibledividerVersion"
-    compile("com.githang:viewpagerindicator:2.5@aar") {
+    compile('com.githang:viewpagerindicator:2.5@aar') {
         exclude module: "support-v4"
     }
-
     compile "com.github.shts:TriangleLabelView:$triangleLabelViewVersion"
-
     compile "com.github.AntennaPod:AntennaPod-AudioPlayer:$audioPlayerVersion"
-
     compile 'com.github.mfietz:fyydlin:v0.3'
 }
 
