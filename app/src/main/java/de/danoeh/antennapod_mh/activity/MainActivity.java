@@ -111,6 +111,9 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  Ver 1.82 (10604023)
  *  - Added Osim Rechev & Hatshuva
  *  - Target sdk level 26
+ *
+ *  Ver 1.83 (10604024)
+ *  - Added Samla, Parnas, Mevaker Hamedina
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -287,6 +290,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.ranlevi.com/feed/osim_software_feed/",
                 "https://www.ranlevi.com/feed/mh_network_feed/",
                 "https://www.ranlevi.com/feed/hatshuva/",
+                "https://www.ranlevi.com/feed/parnas/",
                 "https://www.ranlevi.com/feed/osim_rechev/",
                 "https://www.ranlevi.com/feed/podcast/",
                 "https://www.ranlevi.com/feed/osim_pshia/",
@@ -298,6 +302,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.ranlevi.com/feed/osim_shivuk/",
                 "https://www.ranlevi.com/feed/osim_tech/",
                 "https://www.ranlevi.com/feed/osim_tiuol/",
+                "https://www.omnycontent.com/d/playlist/178d72a7-a889-4132-8008-a5cc014ed109/067295d0-f809-4284-a97d-a9b100de9717/95fa23ee-25c5-40e7-8bcb-a9b100df46c2/podcast.rss",
+                "https://www.ranlevi.com/feed/samla_feed/",
                 "https://www.ranlevi.com/feed/osim_historia_archived_episodes/",
                 "https://malicious.life/feed/podcast/",
                 "https://www.familysounds.co.il/feed/podcast/",
