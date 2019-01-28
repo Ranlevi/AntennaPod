@@ -114,6 +114,10 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *
  *  Ver 1.83 (10604024)
  *  - Added Samla, Parnas, Mevaker Hamedina
+ *
+ *  Ver 1.84 (10604025)
+ *  - Added Waterfall, Talma. Updated Kann (Hinochit) RSS feeds.
+ *  - Removed Livni
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -306,17 +310,19 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.ranlevi.com/feed/samla_feed/",
                 "https://www.ranlevi.com/feed/osim_historia_archived_episodes/",
                 "https://malicious.life/feed/podcast/",
+                "https://www.ranlevi.com/feed/industrial_security_podcast/",
                 "https://www.familysounds.co.il/feed/podcast/",
                 "https://www.waterline.ranlevi.com/feed/podcast/",
                 "https://www.cmpod.net/feed/podcast/",
+                "https://www.ranlevi.com/feed/talma_feed/",
                 "https://www.ranlevi.com/feed/iec_mitan_hashmali/",
-                "https://tzipilivni.podbean.com/feed.xml",
                 "https://www.ranlevi.com/feed/discount_failure_to_success/",
-                "http://www.23tv.co.il/podcasts//RssFiles/1891669519085332362318670163129206681262536185237185.xml",
-                "http://www.23tv.co.il/podcasts//RssFiles/13494472242339531892112926166689245150147198249.xml",
-                "http://www.23tv.co.il/podcasts//RssFiles/1581762345314425325423167216238247459322011458484685.xml",
-                "http://www.23tv.co.il/podcasts//RssFiles/230228249131742352151301221072161871915010117023186245221.xml",
-                "http://www.23tv.co.il/podcasts//RssFiles/246411021292372130711246131552371520515019920916195.xml"
+                "https://www.omnycontent.com/d/playlist/23f697a0-7e6a-4e96-a223-a82c00962b12/37d217c6-e3e1-4bc5-bb99-a92f0093059c/b74b5e13-6014-41de-a5c6-a92f009305a1/podcast.rss",
+                "https://www.omnycontent.com/d/playlist/23f697a0-7e6a-4e96-a223-a82c00962b12/0b3111a2-9f44-4a9a-af00-a92f009305d9/fe05cd9e-efa7-4d16-a79e-a92f009305d9/podcast.rss",
+                "https://www.omnycontent.com/d/playlist/23f697a0-7e6a-4e96-a223-a82c00962b12/d5def522-7ca5-4ba1-9730-a92f009305b4/61d0a060-8f09-495d-a278-a92f009305b4/podcast.rss",
+                "https://www.omnycontent.com/d/playlist/23f697a0-7e6a-4e96-a223-a82c00962b12/b0a2ec83-a6a3-4f4f-89fa-a97500d47d07/a6b6bccb-79d0-4d4c-bd94-a97500d47d0c/podcast.rss",
+                "https://www.omnycontent.com/d/playlist/23f697a0-7e6a-4e96-a223-a82c00962b12/90500138-9f9b-4703-9016-a92f009305bd/2798d8d4-3347-40f6-b519-a92f009305bd/podcast.rss",
+                "https://www.omnycontent.com/d/playlist/23f697a0-7e6a-4e96-a223-a82c00962b12/27d10d67-547f-4cb8-9f5a-a92f009305d0/2d71614d-3d87-414a-bb9c-a92f009305d0/podcast.rss"
         };
 
         // Calculate the hash code on the list, should change automatically each time
