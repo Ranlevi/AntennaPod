@@ -6,8 +6,8 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        minSdkVersion 27
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testApplicationId "de.danoeh.antennapod_mh.core.tests"
@@ -33,9 +33,12 @@ android {
     publishNonDefault true
     productFlavors {
         free {
-            minSdkVersion 26
+            minSdkVersion 25
+            targetSdkVersion 26
         }
         play {
+            minSdkVersion 25
+            targetSdkVersion 26
         }
     }
 

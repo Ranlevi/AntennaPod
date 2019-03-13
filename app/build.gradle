@@ -38,10 +38,9 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 25
+        targetSdkVersion 26
         multiDexEnabled true
-        versionCode getMyVersionCode()
         versionName "${getMyVersionName()}"
         testApplicationId "de.test.antennapod_mh"
         testInstrumentationRunner "de.test.antennapod_mh.AntennaPodTestRunner"
@@ -115,8 +114,12 @@ android {
 
     productFlavors {
         free {
+            minSdkVersion 25
+            targetSdkVersion 26
         }
         play {
+            minSdkVersion 25
+            targetSdkVersion 26
         }
     }
 

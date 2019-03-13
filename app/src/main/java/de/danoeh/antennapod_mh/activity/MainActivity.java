@@ -118,6 +118,9 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *  Ver 1.84 (10604025)
  *  - Added Waterfall, Talma. Updated Kann (Hinochit) RSS feeds.
  *  - Removed Livni
+ *
+ *  Ver 1.85 (10604026)
+ *  - Set Min SDK Level to 25
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
