@@ -121,6 +121,9 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *
  *  Ver 1.85 (10604026)
  *  - Set Min SDK Level to 25
+ *
+ *  Ver 1.86 (10604027)
+ *  - Added Paula & Leon, Osim Nadlan
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -296,6 +299,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
         String[] feeds = new String[]{
                 "https://www.ranlevi.com/feed/osim_software_feed/",
                 "https://www.ranlevi.com/feed/mh_network_feed/",
+                "https://www.ranlevi.com/feed/paula_leon/",
+                "https://www.ranlevi.com/feed/osim_nadlan_feed/",
                 "https://www.ranlevi.com/feed/hatshuva/",
                 "https://www.ranlevi.com/feed/parnas/",
                 "https://www.ranlevi.com/feed/osim_rechev/",
