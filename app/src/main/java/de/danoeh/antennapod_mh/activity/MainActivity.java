@@ -124,6 +124,9 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *
  *  Ver 1.86 (10604027)
  *  - Added Paula & Leon, Osim Nadlan
+ *
+ *  Ver 1.87 (10604027)
+ *  - Removed Osim HIstoria Archive, Added OChel Israel
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -316,7 +319,7 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.ranlevi.com/feed/osim_tiuol/",
                 "https://www.omnycontent.com/d/playlist/178d72a7-a889-4132-8008-a5cc014ed109/067295d0-f809-4284-a97d-a9b100de9717/95fa23ee-25c5-40e7-8bcb-a9b100df46c2/podcast.rss",
                 "https://www.ranlevi.com/feed/samla_feed/",
-                "https://www.ranlevi.com/feed/osim_historia_archived_episodes/",
+                "https://www.ranlevi.com/feed/ochel_israel/",
                 "https://malicious.life/feed/podcast/",
                 "https://www.ranlevi.com/feed/industrial_security_podcast/",
                 "https://www.familysounds.co.il/feed/podcast/",
