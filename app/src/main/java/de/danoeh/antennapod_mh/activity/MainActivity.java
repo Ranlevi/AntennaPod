@@ -127,6 +127,9 @@ import de.danoeh.antennapod_mh.core.storage.DownloadRequester;
  *
  *  Ver 1.87 (10604027)
  *  - Removed Osim HIstoria Archive, Added OChel Israel
+ *
+ *  Ver 1.88 (10604028)
+ *  - Added Osim Kotarot, Sanofi
  */
 public class MainActivity extends CastEnabledActivity implements NavDrawerActivity {
 
@@ -304,6 +307,8 @@ public class MainActivity extends CastEnabledActivity implements NavDrawerActivi
                 "https://www.ranlevi.com/feed/mh_network_feed/",
                 "https://www.ranlevi.com/feed/paula_leon/",
                 "https://www.ranlevi.com/feed/osim_nadlan_feed/",
+                "https://www.ranlevi.com/feed/osim_kotarot/",
+                "https://feeds.simplecast.com/XFAt8ZZl",
                 "https://www.ranlevi.com/feed/hatshuva/",
                 "https://www.ranlevi.com/feed/parnas/",
                 "https://www.ranlevi.com/feed/osim_rechev/",
